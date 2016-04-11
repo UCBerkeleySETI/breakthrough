@@ -33,7 +33,10 @@ zeroth dimension increases in wavelength along an order, and the first dimension
 steps through the spectral orders.
 
 This directory contains the following extracted spectra:
-apf_wav.fits - reduced 1D spectrum of Tabby's star, extractd from ucb-amp193.fits ramp.193.fits - corresponding wavelength calibration solution
+
+apf_wav.fits - reduced 1D spectrum of Tabby's star, extracted from ucb-amp193.fits
+
+ramp.193.fits - corresponding wavelength calibration solution
 
 Hydrogen alpha is in the 53rd order. The magnesium B triplet is in the 34th
 order (0-indexed). Try reading apf_wav.fits into Python using
