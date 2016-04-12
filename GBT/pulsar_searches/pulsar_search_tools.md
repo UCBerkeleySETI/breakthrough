@@ -19,7 +19,7 @@ pip install -e git+https://github.com/caseyjlaw/sidomo.git#egg=sidomo
   - 61054 - number of seconds since start of the day
   - PSR_J1840+5640 - name of the pulsar ("J" refers to Julian epoch, "1840" is the Right Ascension and "5640" is the Declination)
   - 0004 - this is the fourth observation of this source of the day
-  - .fil - this is a filterbank file. For an explanation of the different kinds of files, read https://github.com/stevecroft/breakthrough-listen/blob/master/GBT/waterfall.txt
+  - .fil - this is a filterbank file. For an explanation of the different kinds of files, read https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/waterfall.md
 6. Now run prepfold on the pulsar data. Pulsars emit regular pulses, but these are often too faint to be detected individually, so astronomers need to "fold" the data on the pulsar period. Then various statistics of the pulsar can be determined. This is also a good test of the integrity of the telescope, data, and our systems. 
 
 Change to the directory containing the file you just downloaded and run:
