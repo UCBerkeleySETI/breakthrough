@@ -1,6 +1,6 @@
 # Pulsar Data Analysis Walkthrough
 
-Each Breakthrough Listen observing session includes one observation of a known pulsar that is used to validate that the system is working properly. A standard pipeline automatically processes these pulsar observations daily. Here we use those pulsar observations as the basis of a walkthrough to introduce new users to the kidns of data analysis used in Breakthrough Listen.
+Each Breakthrough Listen observing session includes one observation of a known pulsar that is used to validate that the system is working properly. A standard pipeline automatically processes these pulsar observations daily. Here we use those pulsar observations as the basis of a walkthrough to introduce new users to the kinds of data analysis used in Breakthrough Listen.
 
 The basic analysis tools are tricky to build, so [Casey Law](http://caseyjlaw.github.io) built an analysis environment using [Docker](http://docker.com). Docker is a bit like a virtual machine and provides a lightweight, portable environment for running software. You might find Casey's introduction to how he's using Docker informative: http://caseyjlaw.github.io/docker-in-astronomy.html.
 
