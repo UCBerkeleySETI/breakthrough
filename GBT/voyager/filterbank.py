@@ -262,12 +262,25 @@ def fil_double_to_angle(angle):
 
 class Filterbank(object):
     """ Class for loading and plotting filterbank data """
+    
+    def __repr__(self):
+        return "Filterbank data: %s" % self.filename
+    
     def __init__(self, filename):
+        """ Class for loading and plotting filterbank data.
+        
+        This class parses the filterbank file and stores the header and data
+        as objects:
+            fb = Filterbank('filename_here.fil')
+            fb.header        # filterbank header, as a dictionary
+            fb.data          # filterbank data, as a numpy array
+        
+        Args:
+            filename (str): filename of filterbank file.
+        """
         
         self.filename = filename
         self.header = parse_header(filename)
-        
-        #pprint(self.header)
         
         # Load binary data 
         self.idx_data = len_header(filename)
@@ -284,9 +297,9 @@ class Filterbank(object):
         if n_bytes == 4:
             dd = np.fromstring(d, dtype='float32')
         elif n_bytes == 2:
-            dd = np.fromstring(d, dtype='uint16')
+            dd = np.fromstring(d, dtype='int16')
         elif n_bytes == 1:
-            dd = np.fromstring(d, dtype='uint8')
+            dd = np.fromstring(d, dtype='int8')
         try:    
             if n_ifs == 1:
                 dd = dd.reshape(n_ints, n_chans)
@@ -301,7 +314,7 @@ class Filterbank(object):
             raise
         
         ## Setup frequency axis
-        f0 = self.header['fch1'] + 1.46484375 # fudge factor! TO BE REMOVED
+        f0 = self.header['fch1'] 
         f_delt = self.header['foff']
         self.freqs = np.arange(0, self.header['nchans'], 1, dtype='float64') * f_delt + f0
         
@@ -319,7 +332,6 @@ class Filterbank(object):
         """ Print header information """
         
         for key, val in self.header.items():
-            
             if key == 'src_raj':
                 val = val.to_string(unit=u.hour, sep=':')
             if key == 'src_dej':
@@ -381,7 +393,7 @@ class Filterbank(object):
         # Rebin to max number of points
         dec_fac_x = 1
         if plot_data.shape[0] > MAX_PLT_POINTS:
-            dec_fac_x = plot_data.shape[0] / 8192
+            dec_fac_x = plot_data.shape[0] / MAX_PLT_POINTS
         
         plot_data = rebin(plot_data, dec_fac_x, 1)
         plot_f    = rebin(plot_f, dec_fac_x, 1)
@@ -423,10 +435,10 @@ class Filterbank(object):
         # Make sure waterfall plot is under 4k*4k
         dec_fac_x, dec_fac_y = 1, 1
         if plot_data.shape[0] > MAX_IMSHOW_POINTS[0]:
-            dec_fac_x = plot_data.shape[0] / 8192
+            dec_fac_x = plot_data.shape[0] / MAX_IMSHOW_POINTS[0]
             
         if plot_data.shape[1] > MAX_IMSHOW_POINTS[1]:
-            dec_fac_y =  plot_data.shape[1] / 4096
+            dec_fac_y =  plot_data.shape[1] /  MAX_IMSHOW_POINTS[1]
         
         plot_data = rebin(plot_data, dec_fac_x, dec_fac_y)
         
@@ -449,23 +461,49 @@ class Filterbank(object):
         
 
 if __name__ == "__main__":
+    from argparse import ArgumentParser
     
-    try:
-        filename = sys.argv[1]
-    except:
-        print "Usage: ./filterbank.py FILENAME"
+    parser = ArgumentParser(description="Command line utility for reading and plotting filterbank files.")
     
+    parser.add_argument('-w', action='store_true', default=False, dest='waterfall', 
+                        help='Show waterfall (freq vs. time) plot')
+    parser.add_argument('filename', type=str, 
+                        help='Name of file to read')
+    parser.add_argument('-b', action='store', default=None, dest='f_start', type=float,
+                        help='Start frequency (begin), in MHz')
+    parser.add_argument('-e', action='store', default=None, dest='f_stop', type=float,
+                        help='Stop frequency (end), in MHz')    
+    
+    args = parser.parse_args()
+    
+    # Open filterbank data
+    filename = args.filename
     fil = Filterbank(filename)
     fil.info()
     
-    plt.figure("Spectrum", figsize=(8, 6))
-    fil.plot_spectrum(logged=True)
+    # check start & stop frequencies make sense
+    try:
+        if args.f_start:
+            print "Start freq: %2.2f" % args.f_start
+            assert args.f_start > fil.freqs[0]
+        
+        if args.f_stop:
+            print "Stop freq: %2.2f" % args.f_stop
+            assert args.f_stop < fil.freqs[-1]
+    except AssertionError:
+        print "Error: Start and stop frequencies must lie inside file's frequency range."
+        print "i.e. between %2.2f-%2.2f MHz." % (fil.freqs[0], fil.freqs[-1])
+        exit()
+    
+    if not args.waterfall:
+        plt.figure("Spectrum", figsize=(8, 6))
+
+        fil.plot_spectrum(logged=True, f_start=args.f_start, f_stop=args.f_stop)
     
     # don't bother doing imshow if it's only a few integrations
-    if fil.data.shape[0] > 10:
+    if args.waterfall:
         plt.figure("waterfall", figsize=(8, 6))
-        fil.plot_waterfall()
+        fil.plot_waterfall(f_start=args.f_start, f_stop=args.f_stop)
         #plt.clim(75, 85)
     
-    plt.show()
-    
+    plt.show()    
