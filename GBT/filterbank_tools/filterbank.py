@@ -300,6 +300,10 @@ class Filterbank(object):
             
         # Slice out frequency start & stop if required
         chan_start_idx, chan_stop_idx = 0, self.header['nchans']
+        if f_delt < 0:
+            chan_start_idx, chan_stop_idx = self.header['nchans'], 0
+            
+            
         if f_start:
             chan_start_idx = closest(file_freq_mapping, f_start)
         if f_stop:
@@ -418,7 +422,7 @@ class Filterbank(object):
             i_stop = closest(self.freqs, f_stop)
 
         plot_f    = self.freqs[i_start:i_stop]
-        plot_data = self.data[if_id, :, i_start:i_stop]
+        plot_data = self.data[:, if_id, i_start:i_stop]
         return plot_f, plot_data      
 
     def plot_spectrum(self, t=0, f_start=None, f_stop=None, logged=False, if_id=0, c=None, **kwargs):
@@ -436,8 +440,10 @@ class Filterbank(object):
         plot_f, plot_data = self.grab_data(f_start, f_stop, if_id)
         
         if isinstance(t, int):
+            print "extracting integration %i..." % t
             plot_data = plot_data[t]
         elif t == 'all':
+            print "averaging along time axis..."
             plot_data = plot_data.mean(axis=0)
         else:
             raise RuntimeError("Unknown integration %s" % t)
@@ -470,7 +476,7 @@ class Filterbank(object):
         ax.get_xaxis().get_major_formatter().set_useOffset(False)
         plt.xlim(plot_f[0], plot_f[-1])
     
-    def plot_waterfall(self, f_start=None, f_stop=None, logged=True, **kwargs):
+    def plot_waterfall(self, f_start=None, f_stop=None, if_id=0, logged=True, **kwargs):
         """ Plot waterfall of data 
         
         Args:
@@ -479,7 +485,8 @@ class Filterbank(object):
             logged (bool): Plot in linear (False) or dB units (True),
             kwargs: keyword args to be passed to matplotlib imshow()
         """
-        plot_f, plot_data = self.grab_data(f_start, f_stop)
+        plot_f, plot_data = self.grab_data(f_start, f_stop, if_id)
+        
         if logged:
             plot_data = db(plot_data)
         
@@ -492,6 +499,7 @@ class Filterbank(object):
             dec_fac_y =  plot_data.shape[1] /  MAX_IMSHOW_POINTS[1]
         
         plot_data = rebin(plot_data, dec_fac_x, dec_fac_y)
+        
         
         try:
             plt.title(self.header['source_name'])
@@ -530,6 +538,8 @@ if __name__ == "__main__":
                         help='Stop integration (end) ID')    
     parser.add_argument('-i', action='store_true', default=False, dest='info_only',
                         help='Show info only')
+    parser.add_argument('-a', action='store_true', default=False, dest='average',
+                       help='average along time axis (plot spectrum only)')
     
     args = parser.parse_args()
     
@@ -544,6 +554,11 @@ if __name__ == "__main__":
         else:
             t_start = args.t_start
         t_stop  = t_start + 1
+        
+        if args.average:
+            t_start = None
+            t_stop  = None
+        
     else:
         t_start = args.t_start
         t_stop  = args.t_stop
@@ -572,7 +587,7 @@ if __name__ == "__main__":
         if not args.waterfall:
             plt.figure("Spectrum", figsize=(8, 6))
         
-            fil.plot_spectrum(logged=True, f_start=args.f_start, f_stop=args.f_stop)
+            fil.plot_spectrum(logged=True, f_start=args.f_start, f_stop=args.f_stop, t='all')
         
         # don't bother doing imshow if it's only a few integrations
         if args.waterfall:
