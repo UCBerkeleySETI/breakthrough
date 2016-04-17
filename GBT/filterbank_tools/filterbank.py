@@ -540,7 +540,8 @@ if __name__ == "__main__":
                         help='Show info only')
     parser.add_argument('-a', action='store_true', default=False, dest='average',
                        help='average along time axis (plot spectrum only)')
-    
+    parser.add_argument('-s', action='store', default='', dest='plt_filename', type=str,
+                       help='save plot graphic to file (give filename as argument)')
     args = parser.parse_args()
     
     # Open filterbank data
@@ -594,5 +595,8 @@ if __name__ == "__main__":
             plt.figure("waterfall", figsize=(8, 6))
             fil.plot_waterfall(f_start=args.f_start, f_stop=args.f_stop)
             #plt.clim(75, 85)
+        
+        if args.plt_filename != '':
+            plt.savefig(args.plt_filename)
         
         plt.show()    
