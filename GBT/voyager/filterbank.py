@@ -284,7 +284,7 @@ class Filterbank(object):
         
         # Load binary data 
         self.idx_data = len_header(filename)
-        f = open(filename, 'r')
+        f = open(filename, 'rb')
         f.seek(self.idx_data)
         d = f.read()
         
