@@ -18,7 +18,7 @@ To generate the high level data products, we take as input a coarsely channelize
 
 The raw voltages are stored in GUPPI-raw format (also called PSRFITS-raw or “baseband data”).
 
-Information about the file format is at the SETI Brainstorm page at https://seti.berkeley.edu/GBT_SETI_Data_Description . For BL data, the channel ordering is flipped in frequency, and the files are written natively as 8 bit rather than 2 bit (although we're requantizing much of the data to 2 bit after it's taken).
+Information about the file format is at the SETI Brainstorm page at https://seti.berkeley.edu/var/www/html/GBT_SETI_Data_Description . For BL data, the channel ordering is flipped in frequency, and the files are written natively as 8 bit rather than 2 bit (although we're requantizing much of the data to 2 bit after it's taken).
 
 The output from the BL switch is 8 chunks of 64 channels of ~3 MHz width (⅛ of the Nyquist band). Each compute node gets a consecutive chunk in frequency.
 
