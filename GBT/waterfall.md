@@ -24,7 +24,7 @@ The output from the BL switch is 8 chunks of 64 channels of ~3 MHz width (⅛ of
 
 Files are stored as one sequence of files per observation per node. There are 64 voltage streams per file. Each file in a sequence is about 18 GB, corresponding to about 20 seconds in time.
 
-Tools are available to generate “filterbank” format data from the GUPPI-raw files. Filterbank files store power as a function of frequency and time, and have filenames ending in .fil. These have a header that is about 250 bytes, and then a bunch of spectral data, in a sequence of total power spectra from zero up to N.
+Tools are available (https://github.com/UCBerkeleySETI/filterbank) to generate “filterbank” format data from the GUPPI-raw files. Filterbank files store power as a function of frequency and time, and have filenames ending in .fil. These have a header that is about 250 bytes, and then a bunch of spectral data, in a sequence of total power spectra from zero up to N.
 
 There are currently four principal code bases. Two pulsar code bases, the GBT spectral line and continuum data reduction code (mostly in IDL), and GBT SETI (there's a github repository for this), which contains the rudiments of the pipeline that we run at GBT. 
 
