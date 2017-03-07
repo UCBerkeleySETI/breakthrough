@@ -9,8 +9,8 @@ Coarse channelization (using a polyphase filter bank, essentially a big bank of 
 The Breakthrough machines consist of the head node, storage notes, and compute nodes:
 
 Head node: Contains boot images for the other systems in the cluster.
-Storage node (currently 1, will be 8): Long term archival storage with RAID6.
-Compute / high speed storage mode (currently 8, will be 64): Where the action happens when we are doing observations. They record raw data to disk. All of the analysis will happen here, in place.
+Storage node (currently 1, will be 4): Long term archival storage with RAID6.
+Compute / high speed storage mode (currently 24, will be 32): Where the action happens when we are doing observations. They record raw data to disk. All of the analysis will happen here, in place.
 
 GUPPI (Green bank Ultimate Pulsar Machine) is the old pulsar machine at GBT, that was used for the first SETI observations there. It’s only 800 MHz bandwidth, but it’s the only instrument there currently that can do pulsar timing and has a well-tested baseband capability (i.e. the ability to write raw voltages). The GUPPI software (somewhat modified by Breakthrough engineer Dave MacMahon) is what’s used to record BL data on our new machines.
 
@@ -20,11 +20,11 @@ The raw voltages are stored in GUPPI-raw format (also called PSRFITS-raw or “b
 
 Information about the file format is at the SETI Brainstorm page at https://seti.berkeley.edu/var/www/html/GBT_SETI_Data_Description . For BL data, the channel ordering is flipped in frequency, and the files are written natively as 8 bit rather than 2 bit (although we're requantizing much of the data to 2 bit after it's taken).
 
-The output from the BL switch is 8 chunks of 64 channels of ~3 MHz width (⅛ of the Nyquist band). Each compute node gets a consecutive chunk in frequency.
+The output from the BL switch is 8 chunks of 64 channels of ~3 MHz width (⅛ of the Nyquist band). Each compute node gets a consecutive chunk in frequency (somewhat confusingly, the highest frequency chunk is the lowest numbered).
 
 Files are stored as one sequence of files per observation per node. There are 64 voltage streams per file. Each file in a sequence is about 18 GB, corresponding to about 20 seconds in time.
 
-Casey Law and collaborators are developing tools to generate waterfall plots from the raw voltage files, which are available in Docker. The output format is “filterbank” (filenames ending in .fil). These have a header that is about 250 bytes, and then a bunch of spectral data, in a sequence of total power spectra from zero up to N.
+Tools are available to generate “filterbank” format data from the GUPPI-raw files. Filterbank files store power as a function of frequency and time, and have filenames ending in .fil. These have a header that is about 250 bytes, and then a bunch of spectral data, in a sequence of total power spectra from zero up to N.
 
 There are currently four principal code bases. Two pulsar code bases, the GBT spectral line and continuum data reduction code (mostly in IDL), and GBT SETI (there's a github repository for this), which contains the rudiments of the pipeline that we run at GBT. 
 
