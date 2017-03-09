@@ -1,0 +1,2 @@
+from deep_anomaly.models.nn_anomaly import LocalOutlierFactor
+from deep_anomaly.models.nn_anomaly import KNNAnomaly
