@@ -148,7 +148,7 @@ The presentations from our 2016 Breakthrough Listen machine learning workshop ar
 
 You can also browse some badly-organized code from this one-day workshop at https://github.com/UCBerkeleySETI/blml
 
-More recently, a graduate student and a handful of undergraduate interns working with our group have had a crack at ML analysis on GBT SETI data (see https://github.com/UCBerkeleySETI/breakthrough/tree/master/ML). One such analysis used an earlier dataset from GBT that, rather than consisting of pointed ON-OFF observations consists of raster scans across the sky. This introduces some idiosyncrasies that do not apply to the BL dataset, but the analysis may still prove informative. Documentation is available at https://github.com/UCBerkeleySETI/blml/blob/master/presentations/BLMLWorkshop.IShivvers.pdf and code at https://github.com/UCBerkeleySETI/breakthrough/blob/master/ML/kepler-analysis/analysis.ipynb 
+More recently, a graduate student and a handful of undergraduate interns working with our group have had a crack at ML analysis on GBT SETI data (see https://github.com/UCBerkeleySETI/breakthrough/tree/master/ML). One such analysis used an earlier dataset from GBT that, rather than consisting of pointed ON-OFF observations consists of raster scans across the sky. This introduces some idiosyncrasies that do not apply to the BL dataset, but the analysis may still prove informative. Documentation is available at https://github.com/UCBerkeleySETI/blml/blob/master/presentations/BLMLWorkshop.IShivvers.pdf and code at https://github.com/UCBerkeleySETI/breakthrough/blob/master/ML/kepler-analysis/analysis.ipynb
 
 Our interns have also tried some preliminary analyses on BL data, but there are still many very promising avenues to explore in this area.
 
@@ -168,6 +168,10 @@ Material on RFI mitigation:
 Some more machine learning papers that may be of interest, not directly related to BL or our data, but maybe relevant:
 * Outlier detection on galaxy images, based on unsupervised Random Forest: https://arxiv.org/pdf/1611.07526.pdf
 * Feature extraction in galaxy images using generative adversarial networks: https://arxiv.org/pdf/1702.00403.pdf
+
+Radio astronomy tutorials (more in depth than you'll need, but good for reference):
+* Interferometry and Synthesis in Radio Astronomy (free ebook): https://link.springer.com/book/10.1007%2F978-3-319-44431-4
+* Lecture notes from the Essential Radio Astronomy course by Condon and Ransom (now also available as a texbook): http://www.cv.nrao.edu/course/astr534/ERA_old.shtml
 
 ## Summary
 
