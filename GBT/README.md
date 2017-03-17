@@ -58,11 +58,11 @@ Those are the three main search techniques we're employing. Now to talk about th
 
 ## Data volumes
 
-The raw datastream coming out of the GBT is 750 MB / second per compute node. We currently have 24 compute nodes (rack mounted computers with GPU processors and lots of disks), although for technical reasons our observations as of early 2017 have mostly used just 8 nodes. We're observing for 20% of the time on the GBT - almost 5 hours per day. We have 4 PB of storage and 200 TFLOPS of compute at GBT, but we don't have the space to archive this 100 TB / day of raw data products. Ultimately we want to develop algorithms that will analyze the input data stream in real time, but for now, let's concentrate on the data products that we *do* archive, which amount to around 500 GB per hour.
+The raw datastream recorded by our instrumentation at GBT is 750 MB / second per compute node. We currently have 32 compute nodes (rack mounted computers with GPU processors and lots of disks), although for technical reasons our observations as of early 2017 have mostly used just 8 nodes. We're observing for 20% of the time on the GBT - almost 5 hours per day. We have 4 PB of storage and 200 TFLOPS of compute at GBT, but we don't have the space to archive this 100 TB / day of raw data products. Ultimately we want to develop algorithms that will analyze the input data stream in real time, but for now, let's concentrate on the data products that we *do* archive, which amount to around 500 GB per hour.
 
 ![The BL rack at GBT](images/bl-rack.jpg)
 
-*The BL compute rack at GBT, showing 24 compute nodes in addition to storage nodes.*
+*The BL compute rack at GBT (as of late 2016), showing 24 compute nodes in addition to storage nodes.*
 
 We achieve the reduction in file size essentially by averaging in time, or frequency, or both, losing some of the native resolution of the raw data in exchange for manageable file sizes. The resulting files are stored in "filterbank" format (see below for a description of how to read filterbank files), which is basically an array of detected signal strength as a function of frequency and time (with some header information attached). There's one of these filterbank files in our archive for each five-minute observation of each star. Actually, filterbank files are "spliced" together from data from each of the 8 (or more) compute nodes, but for many purposes we want to use the spliced files in our analysis.
 
@@ -78,7 +78,7 @@ Such file sizes don't present a major challenge for simpler algorithms, but soph
 
 ## So how do we find ET?
 
-Here's what we're doing so far.
+Here are some basic techniques:
 
 ### Thresholded hits
 
