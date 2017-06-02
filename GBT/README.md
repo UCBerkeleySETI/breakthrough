@@ -140,7 +140,13 @@ This is a nice illustration of the capabilities of our instruments to detect sig
 
 ### How to analyze thresholded hits
 
-We have some code which will determine thresholded hits from an input filterbank file, store the results in a mySQL database, and then allow the user to query the database for signals of interest and display the results via a web interface. This code, as well as code to perform the Doppler drift search, is still under active development but please let us know if you would like access as a beta tester or developer. When it's ready, we'll put it on github.
+We have some code which will determine thresholded hits from an input filterbank file, store the results in a mySQL database, and then allow the user to query the database for signals of interest and display the results via a web interface. This code is still under active development but please let us know if you would like access as a beta tester or developer. When it's ready, we'll put it on github.
+
+### How to perform a Doppler drift search
+
+We recently published a paper [Enriquez et al. (2017)](http://blpd0.ssl.berkeley.edu/lband2017/Lband_BL_SETI_Submitted_Draft.pdf) that outlines the Doppler drift search that we performed on a subsample of the L-band BL data from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline.
+
+You can also browse through events and statistics detected as part of this analysis at https://seti.berkeley.edu/lband2017/
 
 ### How to apply ML to BL data
 
