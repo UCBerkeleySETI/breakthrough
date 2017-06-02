@@ -144,7 +144,7 @@ We have some code which will determine thresholded hits from an input filterbank
 
 ### How to perform a Doppler drift search
 
-We recently published a paper [Enriquez et al. (2017)](http://blpd0.ssl.berkeley.edu/lband2017/Lband_BL_SETI_Submitted_Draft.pdf) that outlines the Doppler drift search that we performed on a subsample of the L-band BL data from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline.
+We recently published a paper ([Enriquez et al. (2017)](http://blpd0.ssl.berkeley.edu/lband2017/Lband_BL_SETI_Submitted_Draft.pdf)) that outlines the Doppler drift search that we performed on a subsample of the L-band BL data from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline.
 
 You can also browse through events and statistics detected as part of this analysis at https://seti.berkeley.edu/lband2017/
 
@@ -185,4 +185,4 @@ The search for extraterrestrial intelligence attempts to answer one of humanity'
 
 We welcome those with technical skills in signal processing, machine learning, and related areas to help us in our goal of removing the haystack of RFI while not throwing away the needle, the ETI signal for which we search. While we don't have the resources to provide personalized support to those who are just getting started with learning Python or data processing, if you make some progress with our data using modern analytics tools, we'd love to hear from you at bsrc@berkeley.edu.
 
-*Steve Croft, March 2017*
+*Steve Croft, May 2017*
