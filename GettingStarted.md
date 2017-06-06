@@ -34,6 +34,8 @@ Once you are familiar with Python, skills that you'll find useful for our resear
 * [Jupyter](http://jupyter.org/)
 * [Astropy](http://docs.astropy.org/en/stable/) - particularly "Core data structures and transformations", and "Connecting up: Files and I/O"
 
+Danny Price also has a nice intro to some of the Python tools we use in our work at https://gist.github.com/telegraphic/790df2b9dc94dcb690053fe563687282
+
 If you are familiar with all of the above, and want to dig a little deeper into visualization tools, you might be interested in [Bokeh](http://bokeh.pydata.org/en/latest/).
 
 ### Other languages
