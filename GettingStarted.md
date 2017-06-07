@@ -10,6 +10,8 @@ The search for extraterrestrial intelligence is a field that bridges observation
 
 The [O'Reilly](https://www.oreilly.com/) books are a good place to learn about many aspects of modern computing. Some institutions (including UC Berkeley) and public libraries have a subscription to electronic versions of the O'Reilly catalog, as well as other books of interest. Try accessing http://proquest.safaribooksonline.com/ or borrow the physical books from your local library. You'll find lots of books about Unix, Python, SQL, and many other topics.
 
+Before starting work with us, we recommend that you update your operating system to the latest version. For Mac OS, please also install [Xcode](https://developer.apple.com/xcode/) to ensure that you have up to date compilers. You'll also need the Xcode command line tools, which you can install by typing ``xcode-select --install`` in a terminal once Xcode is installed. We also recommend that you install the [MacPorts](https://www.macports.org/install.php) package manager - note the dependencies on Xcode here. 
+
 ### Basic Unix skills
 
 Unix is the basis of the operating systems that we use on pretty much all of our computers at Berkeley SETI. If it's not Unix proper, it's a variant such as Linux or MacOS. You'll need to know how to open a terminal window, as well as basic commands like `cd`, `ls`, `mv`, etc. and how to `ssh` into a remote machine as well as how to run a VNC session (many of us use [Chicken](https://sourceforge.net/projects/chicken/) on our Macs for this). You'll also be writing shell scripts as part of your internship.
