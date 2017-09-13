@@ -156,7 +156,7 @@ You can also browse some badly-organized code from this one-day workshop at http
 
 More recently, a graduate student and a handful of undergraduate interns working with our group have had a crack at ML analysis on GBT SETI data (see https://github.com/UCBerkeleySETI/breakthrough/tree/master/ML). One such analysis used an earlier dataset from GBT that, rather than consisting of pointed ON-OFF observations consists of raster scans across the sky. This introduces some idiosyncrasies that do not apply to the BL dataset, but the analysis may still prove informative. Documentation is available at https://github.com/UCBerkeleySETI/blml/blob/master/presentations/BLMLWorkshop.IShivvers.pdf and code at https://github.com/UCBerkeleySETI/breakthrough/blob/master/ML/kepler-analysis/analysis.ipynb
 
-Our interns have also tried some preliminary analyses on BL data, but there are still many very promising avenues to explore in this area.
+Our interns have also tried some preliminary analyses on BL data, but there are still many very promising avenues to explore in this area. [Here's a video](https://youtu.be/iENGPqNoFBY) two of our interns produced describing their approach.
 
 #### Background reading
 
