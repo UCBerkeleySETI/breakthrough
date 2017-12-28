@@ -68,12 +68,12 @@ def rebin(d, n_x, n_y=None):
 
     if d.ndim == 2:
         d = d[:int(d.shape[0] / n_x) * n_x, :int(d.shape[1] / n_y) * n_y]
-        d = d.reshape((d.shape[0] / n_x, n_x, d.shape[1] / n_y, n_y))
+        d = d.reshape(int(d.shape[0] / n_x), int(n_x), int(d.shape[1] / n_y, n_y))
         d = d.mean(axis=3)
         d = d.mean(axis=1)
     elif d.ndim == 1:
         d = d[:int(d.shape[0] / n_x) * n_x]
-        d = d.reshape((d.shape[0] / n_x, n_x))
+        d = d.reshape(int(d.shape[0] / n_x), int(n_x))
         d = d.mean(axis=1)
     else:
         raise RuntimeError("Only NDIM <= 2 supported")
