@@ -132,9 +132,9 @@ If you are developing pipelines to compare features between filterbank files, yo
 
 ### How to read in a filterbank file
 
-As noted above, the file format is pretty simple, a header plus a data array. We are moving towards HDF5 for data storage, which, among other things, makes it easier to access portions of a file without reading the whole thing into memory, but for now, if you want to read in a filterbank file, check out https://github.com/UCBerkeleySETI/filterbank
+As noted above, the file format is pretty simple, a header plus a data array. We are moving towards HDF5 for data storage, which, among other things, makes it easier to access portions of a file without reading the whole thing into memory, but for now, if you want to read in a filterbank file, check out [Breakthrough Listen I/O Methods for Python page](https://github.com/UCBerkeleySETI/blimpy) and the [filterbank tutorial](https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/filterbank_tutorial/Filterbank%20Tutorial%20(public).ipynb).
 
-There's also a fun Jupyter notebook that uses the filterbank Python module to read in and display one of our observations of the Voyager I spacecraft. Despite being 20 million kilometers from Earth and having a transmitter that only uses the same power as a refrigerator light, it's clearly detectable by our observations: https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/voyager/voyager.ipynb
+There's also a fun Jupyter notebook that uses the blimpy Python package to read in and display one of our observations of the Voyager I spacecraft. Despite being 20 million kilometers from Earth and having a transmitter that only uses the same power as a refrigerator light, it's clearly detectable by our observations: https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/voyager/voyager.ipynb
 
 This is a nice illustration of the capabilities of our instruments to detect signatures of technology even for very distant targets, and observations like the ones of Voyager, or others with artificially inserted "birdie" signals, could be used as a training set for machine learning or other approaches.
 
