@@ -15,5 +15,8 @@ sigpyproc
 python inference_gbtc.py --model ./models/GBTC.pb --filterband_dir /path/to/data/ --threshold 0.99
 ```
 
+### Trained model
+A trained model will be available shortly. 
+
 ### Researh Code
 research_code directory contains the main code used during the research. The code here are messy and not intended for general use. 
