@@ -1,5 +1,9 @@
 # Neural Network for Fast Radio Burst Detection
 
+
+Author: Yunfan Gerry Zhang
+Email: yf.g.zhang@gmail.com
+
 This is an inference script for detecting FRB with a neural network. It is designed for use with the Breakthrough Listen 
 data product at the Green Bank Telescope. The data and description used can be found at http://seti.berkeley.edu/frb-machine/
 
