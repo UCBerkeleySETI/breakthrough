@@ -2,6 +2,7 @@
 
 
 Author: Yunfan Gerry Zhang
+
 Email: yf.g.zhang@gmail.com
 
 This is an inference script for detecting FRB with a neural network. It is designed for use with the Breakthrough Listen 
