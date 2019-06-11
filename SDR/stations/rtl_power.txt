@@ -1,0 +1,17 @@
+Using rtl_power to Perform a Scan of Frequency Bandwidths
+
+A radio dongle (here a RTL2838) is used to receive signals from nearby radio stations. rtl_power is a program created by reddit user keenerd to be used software defined radio devices to scan frequency bandwidths.
+
+Command:
+rtl_power -f Min:Max:bin filename.type
+
+Min to Max frequency is the range in which the scan takes place; bin is the frequency interval separating each data point.
+
+Using the dongle to scan FM radio stations (ranging from 87.9 to 107.9 MHz), I performed the following scan:
+
+rtl_power -f 87M:108M:1k -g 20 -i 10 -e 15m logfile.csv
+
+Parameters:
+g: gain
+i: time interval for each scan
+e: total scan period
