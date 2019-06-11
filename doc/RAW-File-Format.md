@@ -127,7 +127,10 @@ array of complex voltage samples.  Raw files always contain complex voltage
 samples.  The arrangement of the samples within the data section of a dual
 polarization observation is as follows:
 
-    C0T0P0, C0T0P1, C0T1P0, C0T1P1, C1T0P0, ..., CcTtP0, CcTtP1
+    C0T0P0, C0T0P1, C0T1P0, C0T1P1, C0T2P0, C0T2P1, ... C0TtP0, C0TtP1,
+    C1T0P0, C1T0P1, C1T1P0, C1T1P1, C1T2P0, C1T2P1, ... C1TtP0, C1TtP1,
+    ...
+    CcT0P0, CcT0P1, CcT1P0, CcT1P1, CcT2P0, CcT2P1, ... CcTtP0, CcTtP1
 
 ...where `C0T0P0` represents a complex voltage sample for frequency channel
 index 0, time sample 0, polarization 0; `c` is `NCHAN-1`; and `t` is `NTIME-1`.
@@ -145,7 +148,7 @@ interpreted as a signed two's complement integer ranging from -128 to +127.
 
 For 4 bit data samples, `C0T0P0` consists of one byte: the upper 4 bits contain
 the real component and the lower 4 bits contain the imaginary component.  Each
-4 bit nybble is interpreted as a signed two's complement integer tanging from
+4 bit nybble is interpreted as a signed two's complement integer ranging from
 -8 to +7.
 
 For 2 bit data samples, `C0T0P0` and `C0T0P1` (or, for single polarization
