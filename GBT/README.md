@@ -124,7 +124,7 @@ If you are interested in helping with this effort, here's some background inform
 
 ### How to get access to the data
 
-Some, but not all, of the data are available in the BL archive at http://breakthroughinitiatives.org/OpenDataSearch
+Some, but not all, of the data are available in the BL archive at http://seti.berkeley.edu/opendata
 
 To access GBT data, select "BL at Green Bank" from the projects drop-down, and optionally a target name. Note that this will return large numbers of files with filetype listed as "baseband data". These are the raw voltage files. Until you already have extensive experience using filterbank files, it would be best to avoid these baseband files at first, and stick to some of the example filterbank files (those with a .fil extension) at http://setiathome.berkeley.edu/~mattl/ml/
 
