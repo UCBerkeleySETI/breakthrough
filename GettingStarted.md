@@ -18,7 +18,7 @@ Unix is the basis of the operating systems that we use on pretty much all of our
 
 Here's [a good introduction to doing all this on a Mac](https://developer.apple.com/library/content/documentation/OpenSource/Conceptual/ShellScripting/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004268-TP40003516-SW1).
 
-If you only have a PC running Windows, try installing Ubuntu Linux as a dual-boot system, following the instructions at https://www.ubuntu.com/download/desktop/install-ubuntu-desktop and then follow the Unix tutorial above, or a similar tutorial specifically for Ubuntu (e.g. Chapter 7 of [Ubuntu: Up and Running](http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9781449382827)).
+If you only have a PC running Windows, try installing Ubuntu Linux as a dual-boot system, following the instructions at https://www.ubuntu.com/download/desktop/install-ubuntu-desktop, or install the Windows Subsystem for Linux, https://docs.microsoft.com/en-us/windows/wsl/install-win10. Then follow the Unix tutorial above, or a similar tutorial specifically for Ubuntu (e.g. Chapter 7 of [Ubuntu: Up and Running](http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9781449382827)).
 
 You'll also need to learn how to use the `git` version control system, so take a look at https://backlogtool.com/git-guide/en/intro/intro1_1.html
 
