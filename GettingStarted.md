@@ -28,6 +28,8 @@ Many folks here edit code in `vi` or `emacs` but another great visual editor to 
 
 There are several O'Reilly books focused on learning Python (e.g. http://proquest.safaribooksonline.com/book/programming/python/9781449355722), or you can learn online at https://www.learnpython.org/, https://www.python.org/about/gettingstarted/, https://www.codecademy.com/tracks/python, or a variety of other sites. Here's a tutorial focused on Python for astronomers: http://python4astronomers.github.io/index.html
 
+If you already have some programming experience, there's a great intro to Python as part of Kaggle's data science curriculum at https://www.kaggle.com/learn/overview - this also covers machine learning, data visualization, SQL, and a bunch of other really useful stuff.
+
 If you don't have Python installed (or even if you do, for example the system Python on OSX), we recommend installing the [Anaconda](https://www.continuum.io/downloads) distribution, which comes with lots of packages that you'll need pre-installed.
 
 Once you are familiar with Python, skills that you'll find useful for our research include familiarity with these packages:
