@@ -54,6 +54,8 @@ Imagine a transmitter located near the GBT that is emitting a narrow-band radio 
 
 This provides us with another good way of distinguishing between local RFI (not drifting in frequency) and signals of interest (drifting, with frequency changing up to a few Hertz every second). This is easiest when the signal is narrow-band (imagine a "portamento" or "glide" performed by a violin player) rather than a more complex or broad-band signal, but is another way to attempt to reject local RFI.
 
+Former Breakthrough Listen undergraduate intern Sofia Sheikh discusses Doppler drift rates in a SETI context in [her paper](https://arxiv.org/pdf/1910.01148.pdf), accompanied by a [non-technical blog post](http://seti.berkeley.edu/blog/doppler/).
+
 #### 3. The source looks nothing like other sources
 
 Although one of the basic assumptions in our search is that ETI technology might give off similar signals to our own transmitters, it's possible that a transmission designed to attract our attention will be deliberately "weird" in some way. One can imagine pulsed signals, signals encoding mathematical patterns, signals with odd frequency behavior or modulation patterns, as well as broad-band signals with unusual characteristics that might be missed by our narrow-band search techniques.
