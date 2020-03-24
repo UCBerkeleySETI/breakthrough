@@ -40,11 +40,17 @@ Of course, even if we see a signal in all three ON observations that's absent in
 
 The next method we can use to distinguish between candidate ETI signals and local interference is to see if the frequency of an observed signal is changing with time. The familiar change in frequency of a police siren as the vehicle passes you is due to the Doppler effect, which relates the frequency of a light or sound wave to its velocity relative to the observer. A change in relative velocity (i.e. an acceleration) will produce a signal that changes in frequency as a function of time.
 
-Imagine a transmitter located near the GBT that is emitting a narrow-band radio signal at a constant frequency of 1500 MHz. In a waterfall plot of frequency versus time (refer back to seti.berkeley.edu/listen if you need a reminder about what this entails) this will be a vertical line - the frequency of the signal remains the same. But for a transmitter that's accelerating relative to the GBT, the signal will drift in frequency, and appear as a diagonal line. There's no reason to think that a transmitter on a rotating alien planet, or even one somewhere out in interstellar space, will maintain a constant velocity relative to our telescope on the rotating Earth.
-
 ![Waterfall plot with a narrow-band detection](images/GJ406_57532.01350_378860890_ON.png)
 
 *A waterfall plot showing a signal that is roughly constant in frequency over a 300-second observation. The vast majority of such signals are RFI.*
+
+
+Imagine a transmitter located near the GBT that is emitting a narrow-band radio signal at a constant frequency of 1500 MHz. In a waterfall plot of frequency versus time (refer back to seti.berkeley.edu/listen if you need a reminder about what this entails) this will be a vertical line - the frequency of the signal remains the same. But for a transmitter that's accelerating relative to the GBT, the signal will drift in frequency, and appear as a diagonal line. There's no reason to think that a transmitter on a rotating alien planet, or even one somewhere out in interstellar space, will maintain a constant velocity relative to our telescope on the rotating Earth.
+
+![Graphic of Parkes and GBT receiving signals](images/Berkeley_June_2019_LR.jpg)
+
+*This graphic shows the Parkes Telescope and GBT on opposite sides of our planet, feeding data back to the data center in UC Berkeley. Meanwhile, hypothetical signals from transmitters on exoplanets transmit signals that are picked up by the telescopes. Whereas a cellphone nearby one of the telescopes would not be accelerating with respect to that telescope (and hence the signal would not exhibit a Doppler drift), real technosignatures would be expected to show a Doppler acceleration (Image credit: Breakthrough Listen / Danielle Futselaar)*
+
 
 This provides us with another good way of distinguishing between local RFI (not drifting in frequency) and signals of interest (drifting, with frequency changing up to a few Hertz every second). This is easiest when the signal is narrow-band (imagine a "portamento" or "glide" performed by a violin player) rather than a more complex or broad-band signal, but is another way to attempt to reject local RFI.
 
