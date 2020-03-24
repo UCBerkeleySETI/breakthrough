@@ -28,9 +28,9 @@ We repeat this ABACAD cadence for all of the "A" stars in our [primary target li
 
 A signal would be interesting from a SETI standpoint if it's present in all three "A" (or ON primary source) observations, but absent in the "B/C/D" (or OFF primary source) observations. If someone was standing near the telescope with a cellphone switched on, we wouldn't expect this interference to come and go as we move on and off the primary target on the sky, so this is a good way of ruling out the local interference that makes up the majority of RFI.
 
-![Waterfall plot with a narrow-band detection](images/GJ406_57532.01350_378860890_ON.png)
+![On / off waterfall plots](images/onoff.png)
 
-*A waterfall plot showing a signal that is roughly constant in frequency over a 300-second observation. The vast majority of such signals are RFI.*
+*Three pairs of on-off waterfall plots for a particular source (the "A" source HIP 93805 on the top row, and the corresponding off-source positions on the bottom row). Here we are just showing the output of one compute node, representing 1/8 of the total bandwidth recorded. Various RFI signals with complex frequency-time structure are seen in all six waterfall plots. If we saw some signal that appeared to be uniquely present in just the top row, and was absent in the bottom row (and perhaps also in all other stars in our primary sample) this would be of interest for follow-up. The two bright vertical signals around 2400 MHz that can be seen most clearly in the two plots in the right column are an example of a signal appearing in both on and off observations, and hence very likely local to the telescope. This may well be a  wifi signal (perhaps from a visitor to the GBT who neglected to put their phone in airplane mode). *
 
 But what about satellites? Our instruments record a huge number of "hits" across the observing band. Many are seen at frequencies around 1575 MHz; these correspond to transmissions from the fleet of GPS satellites orbiting the Earth. However, satellites are not fixed in position relative to the stars in the sky, so a given satellite won't be present just in ON observations but absent in OFF. This is true even for geostationary satellites like DirecTV, which remain fixed in position as viewed by an observer on the ground, but which move relative to the "fixed" stars as the satellites orbit the Earth once per day.
 
@@ -41,6 +41,10 @@ Of course, even if we see a signal in all three ON observations that's absent in
 The next method we can use to distinguish between candidate ETI signals and local interference is to see if the frequency of an observed signal is changing with time. The familiar change in frequency of a police siren as the vehicle passes you is due to the Doppler effect, which relates the frequency of a light or sound wave to its velocity relative to the observer. A change in relative velocity (i.e. an acceleration) will produce a signal that changes in frequency as a function of time.
 
 Imagine a transmitter located near the GBT that is emitting a narrow-band radio signal at a constant frequency of 1500 MHz. In a waterfall plot of frequency versus time (refer back to seti.berkeley.edu/listen if you need a reminder about what this entails) this will be a vertical line - the frequency of the signal remains the same. But for a transmitter that's accelerating relative to the GBT, the signal will drift in frequency, and appear as a diagonal line. There's no reason to think that a transmitter on a rotating alien planet, or even one somewhere out in interstellar space, will maintain a constant velocity relative to our telescope on the rotating Earth.
+
+![Waterfall plot with a narrow-band detection](images/GJ406_57532.01350_378860890_ON.png)
+
+*A waterfall plot showing a signal that is roughly constant in frequency over a 300-second observation. The vast majority of such signals are RFI.*
 
 This provides us with another good way of distinguishing between local RFI (not drifting in frequency) and signals of interest (drifting, with frequency changing up to a few Hertz every second). This is easiest when the signal is narrow-band (imagine a "portamento" or "glide" performed by a violin player) rather than a more complex or broad-band signal, but is another way to attempt to reject local RFI.
 
@@ -114,10 +118,6 @@ Can we characterize RFI through a clustering analysis or similar, finding RFI th
 
 Alternatively can we label RFI signals, either manually or using metadata (e.g. the ON or OFF positions) and use this as a training set? In 2016, we had a machine learning workshop at Berkeley where some experts from JPL and elsewhere tried running clustering analysis and deep learning algorithms on our data. This was quite promising, but we need people with ML expertise who can invest significant amounts of time in pushing this forward.
 
-![On / off waterfall plots](images/onoff.png)
-
-*Three pairs of on-off waterfall plots for a particular source (the "A" source HIP93805 on the top row, and the corresponding off-source positions on the bottom row). Here we are just showing the output of one compute node, representing 1/8 of the total bandwidth recorded. Various RFI signals with complex frequency-time structure are seen in all six waterfall plots. If we saw some signal that appeared to be uniquely present in just the top row, and was absent in the bottom row (and perhaps also in all other stars in our primary sample) this would be of interest for follow-up.*
-
 ## How to get started
 
 If you are interested in helping with this effort, here's some background information to get you started.
@@ -185,4 +185,4 @@ The search for extraterrestrial intelligence attempts to answer one of humanity'
 
 We welcome those with technical skills in signal processing, machine learning, and related areas to help us in our goal of removing the haystack of RFI while not throwing away the needle, the ETI signal for which we search. While we don't have the resources to provide personalized support to those who are just getting started with learning Python or data processing, if you make some progress with our data using modern analytics tools, we'd love to hear from you at bsrc@berkeley.edu.
 
-*Steve Croft, May 2017*
+*Steve Croft, March 2019*
