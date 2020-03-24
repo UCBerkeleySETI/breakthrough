@@ -12,7 +12,7 @@ Here's how we deal with these problems:
 
 ### Radio Frequency Interference
 
-RFI is emitted by our own transmitters - not just radio stations, but wifi routers, cellphones, and even electronics that are not deliberately designed to transmit radio signals. So searching for extra-terrestrial intelligence (ETI) signals is very much a needle in a haystack problem. There are three main methods that we can use to weed out signals of interest.
+RFI is emitted by our own transmitters - not just radio stations, but wifi routers, cellphones, and even electronics that are not deliberately designed to transmit radio signals. So searching for extra-terrestrial intelligence (ETI) signals, also known as "technosignatures", is very much a needle in a haystack problem. There are three main methods that we can use to weed out signals of interest.
 
 #### 1. The source is localized on the sky
 
@@ -34,16 +34,15 @@ A signal would be interesting from a SETI standpoint if it's present in all thre
 
 But what about satellites? Our instruments record a huge number of "hits" across the observing band. Many are seen at frequencies around 1575 MHz; these correspond to transmissions from the fleet of GPS satellites orbiting the Earth. However, satellites are not fixed in position relative to the stars in the sky, so a given satellite won't be present just in ON observations but absent in OFF. This is true even for geostationary satellites like DirecTV, which remain fixed in position as viewed by an observer on the ground, but which move relative to the "fixed" stars as the satellites orbit the Earth once per day.
 
-Of course, even if we see a signal in all three ON observations that's absent in the OFFs, this is not convincing evidence of ETI. We would still want to make follow-up observations of the star to see if the signal persists, and if it does, to notify independent teams using different telescopes to see if they can reproduce the result.
+Of course, even if we see a signal in all three ON observations that's absent in the OFFs, this is not a convincing technosignature. We would still want to make follow-up observations of the star to see if the signal persists, and if it does, to notify independent teams using different telescopes to see if they can reproduce the result.
 
 #### 2. The source is narrow band but drifts in frequency
 
-The next method we can use to distinguish between candidate ETI signals and local interference is to see if the frequency of an observed signal is changing with time. The familiar change in frequency of a police siren as the vehicle passes you is due to the Doppler effect, which relates the frequency of a light or sound wave to its velocity relative to the observer. A change in relative velocity (i.e. an acceleration) will produce a signal that changes in frequency as a function of time.
+The next method we can use to distinguish between candidate technosignatures and local interference is to see if the frequency of an observed signal is changing with time. The familiar change in frequency of a police siren as the vehicle passes you is due to the Doppler effect, which relates the frequency of a light or sound wave to its velocity relative to the observer. A change in relative velocity (i.e. an acceleration) will produce a signal that changes in frequency as a function of time.
 
 ![Waterfall plot with a narrow-band detection](images/GJ406_57532.01350_378860890_ON.png)
 
 *A waterfall plot showing a signal that is roughly constant in frequency over a 300-second observation. The vast majority of such signals are RFI.*
-
 
 Imagine a transmitter located near the GBT that is emitting a narrow-band radio signal at a constant frequency of 1500 MHz. In a waterfall plot of frequency versus time (refer back to seti.berkeley.edu/listen if you need a reminder about what this entails) this will be a vertical line - the frequency of the signal remains the same. But for a transmitter that's accelerating relative to the GBT, the signal will drift in frequency, and appear as a diagonal line. There's no reason to think that a transmitter on a rotating alien planet, or even one somewhere out in interstellar space, will maintain a constant velocity relative to our telescope on the rotating Earth.
 
@@ -51,8 +50,7 @@ Imagine a transmitter located near the GBT that is emitting a narrow-band radio 
 
 *This graphic shows the Parkes Telescope and GBT on opposite sides of our planet, feeding data back to the data center in UC Berkeley. Meanwhile, hypothetical signals from transmitters on exoplanets transmit signals that are picked up by the telescopes. Whereas a cellphone nearby one of the telescopes would not be accelerating with respect to that telescope (and hence the signal would not exhibit a Doppler drift), real technosignatures would be expected to show a Doppler acceleration (Image credit: Breakthrough Listen / Danielle Futselaar)*
 
-
-This provides us with another good way of distinguishing between local RFI (not drifting in frequency) and signals of interest (drifting, with frequency changing up to a few Hertz every second). This is easiest when the signal is narrow-band (imagine a "portamento" or "glide" performed by a violin player) rather than a more complex or broad-band signal, but is another way to attempt to reject local RFI.
+This provides us with another good way of distinguishing between local RFI (not drifting in frequency) and signals of interest (drifting, with frequency changing up to several Hertz every second). This is easiest when the signal is narrow-band (imagine a "portamento" or "glide" performed by a violin player) rather than a more complex or broad-band signal, but is another way to attempt to reject local RFI.
 
 Former Breakthrough Listen undergraduate intern Sofia Sheikh discusses Doppler drift rates in a SETI context in [her paper](https://arxiv.org/pdf/1910.01148.pdf), accompanied by a [non-technical blog post](http://seti.berkeley.edu/blog/doppler/).
 
@@ -193,6 +191,6 @@ Radio astronomy tutorials (more in depth than you'll need, but good for referenc
 
 The search for extraterrestrial intelligence attempts to answer one of humanity's oldest questions: Are we alone in the Universe? Breakthrough Listen's program of public code and data seeks to engage the world in this quest. The long-sought signal may in fact already be hiding in our publicly-available dataset, and you may have the skills to help us find it.
 
-We welcome those with technical skills in signal processing, machine learning, and related areas to help us in our goal of removing the haystack of RFI while not throwing away the needle, the ETI signal for which we search. While we don't have the resources to provide personalized support to those who are just getting started with learning Python or data processing, if you make some progress with our data using modern analytics tools, we'd love to hear from you at bsrc@berkeley.edu.
+We welcome those with technical skills in signal processing, machine learning, and related areas to help us in our goal of removing the haystack of RFI while not throwing away the needle, the technosignature for which we search. While we don't have the resources to provide personalized support to those who are just getting started with learning Python or data processing, if you make some progress with our data using modern analytics tools, we'd love to hear from you at bsrc@berkeley.edu.
 
 *Steve Croft, March 2019*
