@@ -142,9 +142,7 @@ If you are interested in helping with this effort, here's some background inform
 
 Some, but not all, of the data are available in the BL archive at http://seti.berkeley.edu/opendata
 
-To access GBT data, select "BL at Green Bank" from the projects drop-down, and optionally a target name. Note that this will return large numbers of files with filetype listed as "baseband data". These are the raw voltage files. Until you already have extensive experience using filterbank files, it would be best to avoid these baseband files at first, and stick to some of the example filterbank files (those with a .fil extension) at http://setiathome.berkeley.edu/~mattl/ml/
-
-If you are developing pipelines to compare features between filterbank files, you may wish to test these with a larger set of data. We've made a subsample of the filterbank files from our analysis in [Enriquez et al. (2017)](http://blpd0.ssl.berkeley.edu/lband2017/Lband_BL_SETI_Submitted_Draft.pdf) available at http://blpd0.ssl.berkeley.edu/Lband/ - there's a total of 16 TB of high frequency resolution filterbanks here. We recommend only downloading these if you have fully explored a smaller subset of the filterbank data. We can provide more filterbank data where these came from on request, and will be making more of the data available online in due course.
+To access GBT data, select "Advanced Search Options", and then uncheck everything except "GBT" and "HDF5". Note that files with filetype "baseband" are the raw voltage files. Until you already have extensive experience using filterbank files, it would be best to avoid these baseband files at first. "FITS" files are optical spectra from the APF. You can then just hit "return" in the search box, or type the name of a target you are interested in, or a date range or position. Note that the database returns only the number of queries specified, so for a large query you will not see all of the matching files in the database by default. The download links will typically link to the same file three times, in each of the filterbank resolutions.
 
 ### How to read in a filterbank file
 
