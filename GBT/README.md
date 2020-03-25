@@ -162,7 +162,7 @@ As noted above, code exists to select signals above some threshold in both 1D an
 
 ### How to perform a Doppler drift search
 
-Two papers have been published on narrowband Doppler drift searches on Breakthrough listen data. [Enriquez et al. (2017)](http://seti.berkeley.edu/lband2017/) outlines the Doppler drift search technique, and reports technosignature limits for 692 stars at frequencies from 1.1 - 1.9 GHz from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline. In a Python environment you should be able to install it with `pip install turboSETI`.
+Two papers have been published on narrowband Doppler drift searches on Breakthrough listen data. [Enriquez et al. (2017)](http://seti.berkeley.edu/lband2017/) outlines the Doppler drift search technique, and reports technosignature limits for 692 stars at frequencies from 1.1 - 1.9 GHz from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline. In a Python environment you should be able to install it with `pip install turbo-seti`.
 
 [Price et al. (2019)](http://seti.berkeley.edu/listen2019/) analyzed 1327 stars from GBT and Parkes datasets. As well as the code, the data files for both of these searches are [publicly available](http://seti.berkeley.edu/opendata).
 
