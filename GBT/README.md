@@ -156,7 +156,7 @@ This is a nice illustration of the capabilities of our instruments to detect sig
 
 ### How to perform energy detection
 
-As noted above, code exists to select signals above some threshold in both 1D and 2D datasets. There's not yet a nicely packaged energy detection algorithm though. What we would like to be able to do is to the equivalent of drawing boxes around signals as shown in the image below, and then extracting those signals as small "postage stamp" images or data arrays for further analysis. If you have smart ideas about how to do this more effectively, we'd love to see them.
+As noted above, code exists to select signals above some threshold in both 1D and 2D datasets. There's not yet a nicely packaged energy detection algorithm though. What we would like to be able to do is to the equivalent of drawing boxes around signals as shown in the image below, and then extracting those signals as small "postage stamp" images or data arrays for further analysis. Part of the difficulty here is that the signals occupy a wide range of scales in frequency and time space - recall that the fine resolution filterbank files contain hundreds of millions or even billions of fine frequency channels, and signals could be just a few channels wide, or many thousands of channels or more. If you have smart ideas about how to extract signals more effectively (ignoring channels that just contain Gaussian noise or at least no signal above some threshold at any spatial scale), we'd love to see a demo using our data.
 
 ![On / off waterfall plots with signals marked](images/onoffboxes.png)
 
@@ -166,7 +166,9 @@ As noted above, code exists to select signals above some threshold in both 1D an
 
 Two papers have been published on narrowband Doppler drift searches on Breakthrough listen data. [Enriquez et al. (2017)](http://seti.berkeley.edu/lband2017/) outlines the Doppler drift search technique, and reports technosignature limits for 692 stars at frequencies from 1.1 - 1.9 GHz from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline. In a Python environment you should be able to install it with `pip install turboSETI`.
 
-[Price et al. (2019)](http://seti.berkeley.edu/listen2019/) analyzed 1327 stars from GBT and Parkes datasets. As well as the code, the data files for both of these searches are publicly available.
+[Price et al. (2019)](http://seti.berkeley.edu/listen2019/) analyzed 1327 stars from GBT and Parkes datasets. As well as the code, the data files for both of these searches are [publicly available](http://seti.berkeley.edu/opendata).
+
+Rob Harrand has a nice [Kaggle notebook](https://www.kaggle.com/tentotheminus9/l-band-2017) where he reproduces some of the results from Enriquez et al.
 
 ### How to apply ML to BL data
 
@@ -180,7 +182,7 @@ Our interns have also tried some preliminary analyses on BL data, but there are 
 
 #### Background reading
 
-In addition to the Python links above (particularly the filterbank reader and ML code), the following may be useful:
+In addition to the links above, the following may be useful:
 * AstroPy - a Python library for astronomy: http://www.astropy.org/ - particularly of relevance here are:
   * [Representing and converting between astronomical coordinate systems](http://docs.astropy.org/en/stable/coordinates/index.html)
   * [Manipulating times and dates](http://docs.astropy.org/en/stable/time/index.html)
