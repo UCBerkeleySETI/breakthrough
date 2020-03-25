@@ -154,9 +154,13 @@ There's also a fun Jupyter notebook that uses blimpy to read in and display one 
 
 This is a nice illustration of the capabilities of our instruments to detect signatures of technology even for very distant targets, and observations like the ones of Voyager, or others with artificially inserted "birdie" signals, could be used as a training set for machine learning or other approaches.
 
-### How to analyze thresholded hits
+### How to perform energy detection
 
-We have some code which will determine thresholded hits from an input filterbank file, store the results in a mySQL database, and then allow the user to query the database for signals of interest and display the results via a web interface. This code is still under active development but please let us know if you would like access as a beta tester or developer. When it's ready, we'll put it on github.
+As noted above, code exists to select signals above some threshold in both 1D and 2D datasets. There's not yet a nicely packaged energy detection algorithm though. What we would like to be able to do is to the equivalent of drawing boxes around signals as shown in the image below, and then extracting those signals as small "postage stamp" images or data arrays for further analysis. If you have smart ideas about how to do this more effectively, we'd love to see them.
+
+![On / off waterfall plots with signals marked](images/onoffboxes.png)
+
+*The same waterfall plots shown above (3 observations of HIP 93805 in the top row, interspersed with "off" observations in the bottom row). We've drawn boxes by hand around some signals that are easy for the human eye to spot. An algorithm that does this effectively in an automated manner would be useful.*
 
 ### How to perform a Doppler drift search
 
