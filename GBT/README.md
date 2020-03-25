@@ -86,7 +86,7 @@ The high frequency resolution files are most like a "traditional" SETI data prod
 
 Such file sizes don't present a major challenge for simpler algorithms, but sophisticated algorithms such as a Doppler drift search or machine learning approaches struggle to deal with the data volumes. We also currently don't have the storage space or network resources to make our whole archive (several PB / year) easily accessible to the algorithms we want to run. Ultimately we would like the data to be in cloud storage with some sort of distributed processing such as Spark to run the analysis. If you have resources that could be donated to help with this goal, please let us know!
 
-You can read a lot more technical details of the file formats, data processing pipeline, and data archive in [Matt Lebofsky's paper](https://arxiv.org/pdf/1906.07391.pdf).
+You can read a lot more technical details of the file formats, data processing pipeline, and data archive in [Matt Lebofsky's paper](https://arxiv.org/pdf/1906.07391.pdf). The instrument itself is described in [Dave MacMahon's paper](https://arxiv.org/pdf/1707.06024.pdf), and there's also a brief overview of the signal processing path [here](waterfall.md).
 
 ## So how do we find ET?
 
