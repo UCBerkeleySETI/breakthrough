@@ -172,7 +172,7 @@ Rob Harrand has a nice [Kaggle notebook](https://www.kaggle.com/tentotheminus9/l
 
 There is a variety of work in progress on applying machine learning techniques to our data. The most mature examples of this were led by former BL grad student Gerry Zhang:
 
-1. Training convolutional neural networks to spot fast radio bursts in BL data that were missed by a classical algorithm [(Zhang et al. 2018)](https://arxiv.org/pdf/1809.03043.pdf). You can read a non-technical summary of these results and access the data [here](http://seti.berkeley.edu/frb-machine/)
+1. Training convolutional neural networks to spot fast radio bursts in BL data that were missed by a classical algorithm [(Zhang et al. 2018)](https://arxiv.org/pdf/1809.03043.pdf). You can read a non-technical summary of these results and access the data [here](http://seti.berkeley.edu/frb-machine/).
 
 2. Using a convolutional-long-short-term-memory network to model the time dependence of signals in BL data in order to look for anomalies. This [summary blog post](http://seti.berkeley.edu:8000/conv-lstm/) describes the results - the accompanying paper is [Zhang et al. (2019)](https://arxiv.org/pdf/1901.04636.pdf).
 
