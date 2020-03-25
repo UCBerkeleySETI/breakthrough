@@ -128,11 +128,11 @@ Of course, there may be "chirped" signals that intrinsically drift in frequency,
 
 ## Machine learning
 
-We're just getting started with this approach, but there are a couple of promising avenues that we are exploring. The filterbank data are arrays of frequency versus time, so algorithms designed for finding features in images might be applicable here. The array sizes are large, but perhaps we can do some binning, or only analyze small subsets of the arrays around regions of interest (e.g. regions surrounding the thresholded hits).
+The filterbank data are arrays of frequency versus time, so algorithms designed for finding features in images might be applicable here. The array sizes are large, but data can be binned or smoothed with a kernel, or we can only analyze small subsets of the arrays around regions of interest (e.g. regions above some threshold in an ergy detection algorithm).
 
-Can we characterize RFI through a clustering analysis or similar, finding RFI that looks similar (e.g. the wide-band pulsed signals from GPS), and then look for outliers in this distribution? Are any of those outliers clustered at particular positions on the sky?
+Can we characterize RFI through a clustering analysis or similar, finding RFI that looks similar (e.g. the wide-band pulsed signals from GPS satellites), and then look for outliers in this distribution? Are any of those outliers clustered at particular positions on the sky?
 
-Alternatively can we label RFI signals, either manually or using metadata (e.g. the ON or OFF positions) and use this as a training set? In 2016, we had a machine learning workshop at Berkeley where some experts from JPL and elsewhere tried running clustering analysis and deep learning algorithms on our data. This was quite promising, but we need people with ML expertise who can invest significant amounts of time in pushing this forward.
+Alternatively can we label RFI signals, either manually or using metadata (e.g. the ON or OFF positions) and use this as a training set? Some work has already been done in ML (see below) but there's still lots of low-hanging fruit even from the application of tools from the "mainstream" deep learning toolbox on our data.
 
 ## How to get started
 
