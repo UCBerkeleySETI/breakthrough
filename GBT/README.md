@@ -120,7 +120,7 @@ If you are using the 3 Hz data, you'll get better SNR, but recall from the discu
 
 ## Doppler drift search
 
-A narrow band signal that's drifting in frequency will have some drift rate in Hz / second that can be measured by looking for diagonal lines in a waterfall plot (the spectrogram of the 2D array of frequency-time data). But since we don't know the acceleration of the ETI transmitter, we don't know the slope of this line, and we have to search through a variety of potential Doppler drift rates and find the one that maximizes the SNR of the detected signal. We are currently working on code to do this with the BL data and will post it on github soon.
+A narrow band signal that's drifting in frequency will have some drift rate in Hz / second that can be measured by looking for diagonal lines in a waterfall plot (the spectrogram of the 2D array of frequency-time data). But since we don't know the acceleration of the ETI transmitter, we don't know the slope of this line, and we have to search through a variety of potential Doppler drift rates and find the one that maximizes the SNR of the detected signal. We've developed some code to do this with the Breakthrough Listen data called turboSETI (see below).
 
 A Doppler drift search is more compute intensive but more sophisticated than the thresholded hits analysis, because it's intrinsically more robust against RFI. Whereas we typically get thousands of thresholded hits per observation of a star (depending on the minimum Z-score threshold chosen), only a handful of these will be well fit by a non-zero Doppler drift. In other words, most RFI is either constant in frequency, or appears as a "squiggle", rather than looking like a diagonal line in a waterfall plot.
 
@@ -160,9 +160,9 @@ We have some code which will determine thresholded hits from an input filterbank
 
 ### How to perform a Doppler drift search
 
-We recently published a paper ([Enriquez et al. (2017)](http://blpd0.ssl.berkeley.edu/lband2017/Lband_BL_SETI_Submitted_Draft.pdf)) that outlines the Doppler drift search that we performed on a subsample of the L-band BL data from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline.
+Two papers have been published on narrowband Doppler drift searches on Breakthrough listen data. [Enriquez et al. (2017)](http://seti.berkeley.edu/lband2017/) outlines the Doppler drift search technique, and reports technosignature limits for 692 stars at frequencies from 1.1 - 1.9 GHz from GBT. The code used to perform this search can be obtained at https://github.com/UCBerkeleySETI/turbo_seti - it's also still under active development as part of our search pipeline. In a Python environment you should be able to install it with `pip install turboSETI`.
 
-You can also browse through events and statistics detected as part of this analysis at https://seti.berkeley.edu/lband2017/
+[Price et al. (2019)](http://seti.berkeley.edu/listen2019/) analyzed 1327 stars from GBT and Parkes datasets. As well as the code, the data files for both of these searches are publicly available.
 
 ### How to apply ML to BL data
 
