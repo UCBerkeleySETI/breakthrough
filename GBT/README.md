@@ -172,19 +172,21 @@ Rob Harrand has a nice [Kaggle notebook](https://www.kaggle.com/tentotheminus9/l
 
 ### How to apply ML to BL data
 
-There is a variety of work in progress on applying machine learning techniques to our data. The most mature examples of this are:
+There is a variety of work in progress on applying machine learning techniques to our data. The most mature examples of this were led by former BL grad student Gerry Zhang:
 
 1. Training convolutional neural networks to spot fast radio bursts in BL data that were missed by a classical algorithm [(Zhang et al. 2018)](https://arxiv.org/pdf/1809.03043.pdf). You can read a non-technical summary of these results and access the data [here](http://seti.berkeley.edu/frb-machine/)
 
 2. Using a convolutional-long-short-term-memory network to model the time dependence of signals in BL data in order to look for anomalies. This [summary blog post](http://seti.berkeley.edu:8000/conv-lstm/) describes the results - the accompanying paper is [Zhang et al. (2019)](https://arxiv.org/pdf/1901.04636.pdf).
 
-The presentations from our 2016 Breakthrough Listen machine learning workshop are online here: https://github.com/UCBerkeleySETI/blml/tree/master/presentations
+A great video from Gerry about these and other avenues he was exploring is [here](https://on-demand.gputechconf.com/gtc/2019/video/_/S9307/), and the accompanying slides are [available as a PDF]( https://developer.download.nvidia.com/video/gputechconf/gtc/2019/presentation/s9307-artificial-intelligence-in-search-for-extra-terrestrial-intelligence_V2.pdf). Some work in progress related to section 3 of Gerry's talk can be found in https://github.com/yunfanz/spectral_represent, particularly `demo.ipynb`.
 
-You can also browse some badly-organized code from this one-day workshop at https://github.com/UCBerkeleySETI/blml
+Our undergraduate interns have also tried some analyses on BL data, but there are still many very promising avenues to explore in this area. [Here's a video](https://youtu.be/iENGPqNoFBY) two of our interns produced describing their approach.
 
-More recently, a graduate student and a handful of undergraduate interns working with our group have had a crack at ML analysis on GBT SETI data (see https://github.com/UCBerkeleySETI/breakthrough/tree/master/ML). One such analysis used an earlier dataset from GBT that, rather than consisting of pointed ON-OFF observations consists of raster scans across the sky. This introduces some idiosyncrasies that do not apply to the BL dataset, but the analysis may still prove informative. Documentation is available at https://github.com/UCBerkeleySETI/blml/blob/master/presentations/BLMLWorkshop.IShivvers.pdf and code at https://github.com/UCBerkeleySETI/breakthrough/blob/master/ML/kepler-analysis/analysis.ipynb
+Anomaly detection is perhaps among the most promising approaches for technosignature searching. While we shouldn't expect an anomaly to look like the contrived example below, this dataset would be a promising technosignature candidate that would warrant followup. The anomaly looks like nothing else in the data, and it's present only in the observations where the telescope was pointed at the primary target star. There is in principle no reason why a technosignature should not appear very similar to other signals in the dataset (e.g. the wifi signal at 2400 MHz) rather than obviously anomalous, but if it's also seen in the "off" observations, or if it's seen at many other locations on the sky in the overall dataset, it's not a strong candidate for a technosignature.
 
-Our interns have also tried some preliminary analyses on BL data, but there are still many very promising avenues to explore in this area. [Here's a video](https://youtu.be/iENGPqNoFBY) two of our interns produced describing their approach.
+![On / off waterfall plots with signals marked](images/onoffanom.png)
+
+*The same waterfall plots shown above (3 observations of HIP 93805 in the top row, interspersed with "off" observations in the bottom row). We've drawn boxes by hand around some signals that are easy for the human eye to spot. We've also inserted a fake technosignature. Perhaps a less contrived example might be a right-angled triangle, a series of pulses representing the digits of pi in binary, or some other signal that looks like no other in the dataset. But as a general rule, whatever a technosignature candidate looks like, it should appear only in the top row of a cadence of on-off observations such as this. Machine learning and computer vision could in principal provide an excellent way of finding such candidates.* 
 
 #### Background reading
 
