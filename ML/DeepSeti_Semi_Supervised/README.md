@@ -69,7 +69,7 @@ Following that all you need to do is clone the repository, and navigate into the
 git clone https://github.com/PetchMa/DeepSeti.git
 ```
 
-Once you're within the cloned folder, copy the code block into a new python script. Fill in the mising directories, and you can train a model on your custom data. **Note: you can also load a pretrained model called *encoder_injection_model_cudda.h5* which has been trained on 500,000 radio samples. Keep in mind this requires CUDDA supported devices + drivers. Try the vanillia encoder_injection_model(1).h5 without Cudda support.**
+Once you're within the cloned folder, copy the code block into a new python script. Fill in the mising directories, and you can train a model on your custom data. **Note: you can also load a pretrained model called *encoder_injection_model_cudda.h5* which has been trained on 1.5 million radio samples. Keep in mind this requires CUDDA supported devices + drivers. Try the vanillia encoder_injection_model(1).h5 without Cudda support.**
 
 
 ```python
@@ -99,12 +99,6 @@ This example will search for the top 4 candidates and return saved images of the
 
 
 # Next Steps
-In the next bit, this project will be scaled up to TPU's to allow for training on larger datasets. Goal is to train the model on over 1 million radio samples! Follow updates on my twitter! [@peterxiangyuan2] Feel free to reach out to me by email: peterxiangyuanma@gmail.com if you have any questions or concerns. 
-
-
-# Acknowledgements
-Special thanks to the UC Berkeley SETI Research Team for the continual support. => list of their work here: [https://github.com/UCBerkeleySETI]
-Also thanks to Breakthrough Listen and Green Bank Telescope for making the data openly accessible. More on them here: [https://breakthroughinitiatives.org/initiative/1]
-
+In the next bit, this project will be scaled up to TPU's to allow for training on larger datasets. Goal is to train the model on over 1.5 million radio samples! Follow updates on my twitter! [@peterxiangyuan2] Feel free to reach out to me by email: peterxiangyuanma@gmail.com if you have any questions or concerns. 
 
 
