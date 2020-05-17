@@ -69,36 +69,33 @@ Following that all you need to do is clone the repository, and navigate into the
 git clone https://github.com/PetchMa/DeepSeti.git
 ```
 
-Once you're within the cloned folder, copy the code block into a new python script. Fill in the mising directories, and you can train a model on your custom data. **Note: you can also load a pretrained model called *encoder_injection_model_cudda.h5* which has been trained on 1.5 million radio samples. Keep in mind this requires CUDDA supported devices + drivers. Try the vanillia encoder_injection_model(1).h5 without Cudda support.**
+Once you're within the cloned folder, copy the code block into a new python script. Fill in the mising directories, and you can train a model on your custom data. **Note: you can also load a pretrained model called *encoder_injection_model_cudda.h5* which has been trained on 500,000 radio samples. Keep in mind this requires CUDDA supported devices + drivers. Try the vanillia encoder_injection_model(1).h5 without Cudda support.**
 
 
 ```python
+%tensorflow_version 1.x
+import tensorflow
 from DeepSeti import DeepSeti
 
-direct = ['/-Your directory-/data.h5',
-          '/-Your directory-/data2.h5',
-          '/-Your directory-/data3.h5'
-          ]
 DeepSeti = DeepSeti()
-DeepSeti.unsupervised_data(direct)
-
-DeepSeti.supervised_data(direct)
-
-
-DeepSeti.encoder_injection_model_defualt_create(CuDNNLSTM=True)
-
-DeepSeti.train_custom_data(epoch=160, batch=20000)
-# NOTE: Loading the CUDDA model will require cudda supported devices + CUDDANN installed 
-# If you wish run without CUDDA accelerated devices use "encoder_injection_model(1).h5" INSTEAD 
-DeepSeti.prediction(model_location="encoder_injection_model_cudda.h5", test_location="data1.h5", 
-                    anchor_location="data2.h5", top_hits=4)
-
-
+DeepSeti.load_model_function(model_location='/content/encoder_injected_model_CUDA_04-13-2020.h5')
+DeepSeti.load_anchor(anchor_location='/content/GBT_58402_66967_HIP66130_mid.h5')
+print("Model Loaded... Executing search loop")
+search_return = DeepSeti.prediction(test_location='/content/'+file_download,  
+                top_hits=1, target_name=file_download,
+                output_folder='/content/drive/My Drive/Deeplearning/SETI/output_folder/',
+                numpy_folder='/content/drive/My Drive/Deeplearning/SETI/numpy_output_folder/')   
 ```
-This example will search for the top 4 candidates and return saved images of these candidates. => Currently working on a way to give specific frequency ranges for its detection. In the works! 
+This example will search for the most confident candidates and return saved images of these candidates. You can checkout an example notebook that loads queries the database EXAMPLE => [https://github.com/PetchMa/DeepSeti/blob/master/Examples/DeepSeti_Engine.ipynb]
 
 
 # Next Steps
-In the next bit, this project will be scaled up to TPU's to allow for training on larger datasets. Goal is to train the model on over 1.5 million radio samples! Follow updates on my twitter! [@peterxiangyuan2] Feel free to reach out to me by email: peterxiangyuanma@gmail.com if you have any questions or concerns. 
+In the next bit, this project will be scaled up to TPU's to allow for training on larger datasets. Goal is to train the model on over 1 million radio samples! Follow updates on my twitter! [https://twitter.com/peterma02] Feel free to reach out to me by email: peterxiangyuanma@gmail.com if you have any questions or concerns. 
+
+
+# Acknowledgements
+Special thanks to the UC Berkeley SETI Research Team for the continual support. => list of their work here: [https://github.com/UCBerkeleySETI]
+Also thanks to Breakthrough Listen and Green Bank Telescope for making the data openly accessible. More on them here: [https://breakthroughinitiatives.org/initiative/1]
+
 
 

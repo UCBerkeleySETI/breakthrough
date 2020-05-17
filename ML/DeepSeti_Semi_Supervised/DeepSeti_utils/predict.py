@@ -71,7 +71,7 @@ class predict(object):
         self.n_chan_width = n_chan_width
         top_hits = []
         f_chan_low = [1190,2290]
-        f_chan_high = [1370, 2360]
+        f_chan_high = [1350, 2360]
         copy = deepcopy(self.values)
         i=0
         while i <top:
