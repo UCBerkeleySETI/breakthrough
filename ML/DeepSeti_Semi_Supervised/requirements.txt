@@ -131,7 +131,7 @@ HeapDict==1.0.1
 holidays==0.9.12
 html5lib==1.0.1
 httpimport==0.5.18
-httplib2==0.17.0
+httplib2==0.18.0
 httplib2shim==0.0.3
 humanize==0.5.1
 hyperopt==0.1.2
