@@ -1,7 +1,7 @@
 # Pulsar Signal Folding - Breakthrough Listen Data
 This notebook illustrates the implementation of pulsar folding and searching techniques from scrath. It finds the period of pusles within fairly noisy data. (Below is a showcase of how "random" pulsar data can appear without proper algorithms)
 
-Checkout the [Notebook Tutorial](https://github.com/PetchMa/Pulsar_Folding/blob/master/Pulsar_folding_Example.ipynb)
+Checkout the [Notebook Tutorial](Pulsar_DedisperseV3.ipynb)
 
 <p align="center"> 
     <img src="https://github.com/PetchMa/pulsar_notebooks/blob/master/assets/FAST_folding.gif?raw=true">
