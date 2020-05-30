@@ -16,7 +16,6 @@ However, the problem is, we don't know the dispersion measure `DM` of the signal
     <img src="https://astronomy.swin.edu.au/cms/cpg15x/albums/scaled_cache/wonderpulse-400x309.jpg">
 </p>
 
-
 # Fast Fourier and Fast Folding
 
 We first apply the discrete Fourier transform onto the data and look for the largest magnitude of the Fourier transform. This indicates potential periods within the data. Then we need to check for its consistency and we do so by folding the data by the period the Fourier transform indicates.
