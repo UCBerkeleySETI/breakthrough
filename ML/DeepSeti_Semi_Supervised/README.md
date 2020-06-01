@@ -1,4 +1,7 @@
 # DeepSeti - Breakthrough Listen Deep Learning Search Tool
+
+#### Contributed by Peter Ma| [Contact](https://peterma.ca/)
+
 This is a python implementation of DeepSeti - an algorithm designed to detect anomalies for radio telescope data open-sourced by Breakthrough Listen. These python scripts facilitate the custom architecture and training loops required for the DeepSeti algorithm to perform a multichannel search for anomalies. The main objective is to develop software that increases the computational sensitivity and speed to search for 'unknown' anomalies.  **NOTE:** *Currently this code only works for **MID-RES filterbank and h5 files**. Developments made further will performing tests on full res products from GBT.*
 
 ![alt text](https://github.com/PetchMa/DeepSeti/blob/master/assets/code_block1.png)
