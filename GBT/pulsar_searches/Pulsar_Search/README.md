@@ -28,11 +28,7 @@ Next we apply the discrete Fourier transform on the data to detect periodic puls
 The folding algorithm is simple. You take each period and you fold the signals on top of itself. If the period you guessed matches the true period of the pulses then by the law of superposition it will increase the signal to noise ratio. This spike in signal to noise ratio can be seen in the following graph. This algorithm can be described with the following. 
 
 <p align="center"> 
-    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/folding.png?raw=true">
-</p>
-
-<p align="center"> 
-    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/dm.png?raw=true">
+    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/folding.png?raw=true" width="200px">
 </p>
 
 
