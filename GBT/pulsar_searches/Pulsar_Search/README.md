@@ -10,7 +10,7 @@ Check out the [Notebook Tutorial](Pulsar_DedisperseV3.ipynb)
 </p>
 
 # Brute Force Dedispersion Techniques 
-When pulsar pulses reach Earth they actually reach the observer at different times due to a dispersion of the radiation as it travels through the interstellar medium causing time delays. These appear as a "swooping curve" instead of plane waves. If we are going to fold the pulses to increase SNR then we're making the assumption that the pulses arrive at the same time. Thus we need to correct the dispersion by shifting each channel down a certain time delay relative to its frequency channel. Computationally we index a column of the spectrogram in frequency and split it between a time delay and original data and swap the positions.
+When pulsar pulses reach Earth they actually reach the observer at different times due to a dispersion of radiation as it travels through the interstellar medium causing time delays. These appear as a "swooping curve" instead of plane waves. If we are going to fold the pulses to increase SNR then we're making the assumption that the pulses arrive at the same time. Thus we need to correct the dispersion by shifting each channel down a certain time delay relative to its frequency channel. Computationally we index a column of the spectrogram in frequency and split it between a time delay and original data and swap the positions.
 
 However, the problem is, we don't know the dispersion measure `DM` of the signal. The `DM` is the path integral of the signal through the interstellar medium. What we can do is to brute force the `DM` value by executing multiple trial `DM`s where we take the highest SNR created by the dedispersion with the given trial `DM`.
 
