@@ -1,5 +1,5 @@
 # Non Negative Tensor/Matrix Factorization - SETI
-## Try It Out
+#### Contributed by Peter Ma| [Contact](https://peterma.ca/)
 You can try out the example note book that gives a good walkthrough on the implementation! [link](https://github.com/PetchMa/NTF_SETI_RFI/blob/master/Example_Non_Negative_Matrix_Factor.ipynb "link")
 
 ## How It Works
