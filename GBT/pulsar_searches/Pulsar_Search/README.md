@@ -1,6 +1,6 @@
 # Pulsar Signal Folding - Breakthrough Listen Data
 
-#### Written by Peter Ma
+#### By Peter Ma | [Contact](https://peterma.ca/)
 This notebook illustrates the implementation of pulsar folding and searching techniques from search. It finds the period of pulses within fairly noisy data. (Below is a showcase of how "random" pulsar data can appear without proper algorithms)
 
 Check out the [Notebook Tutorial](Pulsar_DedisperseV3.ipynb)
