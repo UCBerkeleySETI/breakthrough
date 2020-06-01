@@ -15,6 +15,10 @@ When pulsar pulses reach Earth they actually reach the observer at different tim
 However, the problem is, we don't know the dispersion measure `DM` of the signal. The `DM` is the path integral of the signal through the interstellar medium. What we can do is to brute force the `DM` value by executing multiple trial `DM`s where we take the highest SNR created by the dedispersion with the given trial `DM`.
 $$DM =\int_0^d n_e dl$$ 
 
+<script type="text/javascript" async
+
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
 <p align="center"> 
     <img src="https://astronomy.swin.edu.au/cms/cpg15x/albums/scaled_cache/wonderpulse-400x309.jpg">
 </p>
@@ -26,6 +30,10 @@ Next we apply the discrete Fourier transform on the data to detect periodic puls
 The folding algorithm is simple. You take each period and you fold the signals on top of itself. If the period you guessed matches the true period of the pulses then by the law of superposition it will increase the signal to noise ratio. This spike in signal to noise ratio can be seen in the following graph. This algorithm can be described with the following. 
 
 $$s_j = \sum^{N/P-1}_{K=0} D_{j+kP} $$
+
+<script type="text/javascript" async
+
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
 
 <p align="center"> 
