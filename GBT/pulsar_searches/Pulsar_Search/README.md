@@ -6,7 +6,7 @@ This notebook illustrates the implementation of pulsar folding and searching tec
 Check out the [Notebook Tutorial](Pulsar_DedisperseV3.ipynb)
 
 <p align="center"> 
-    <img src="https://github.com/PetchMa/pulsar_notebooks/blob/master/assets/FAST_folding.gif?raw=true">
+    <img src="https://github.com/PetchMa/pulsar_notebooks/blob/master/assets/FAST_folding.gif?raw=true" >
 </p>
 
 # Brute Force Dedispersion Techniques 
@@ -14,7 +14,7 @@ When pulsar pulses reach Earth they actually reach the observer at different tim
 
 However, the problem is, we don't know the dispersion measure `DM` of the signal. The `DM` is the path integral of the signal through the interstellar medium. What we can do is to brute force the `DM` value by executing multiple trial `DM`s where we take the highest SNR created by the dedispersion with the given trial `DM`.
 <p align="center"> 
-    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/dm.png?raw=true">
+    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/dm.png?raw=true" width="250px">
 </p>
 
 <p align="center"> 
@@ -28,7 +28,7 @@ Next we apply the discrete Fourier transform on the data to detect periodic puls
 The folding algorithm is simple. You take each period and you fold the signals on top of itself. If the period you guessed matches the true period of the pulses then by the law of superposition it will increase the signal to noise ratio. This spike in signal to noise ratio can be seen in the following graph. This algorithm can be described with the following. 
 
 <p align="center"> 
-    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/folding.png?raw=true" width="200px">
+    <img src="https://github.com/PetchMa/breakthrough/blob/master/GBT/pulsar_searches/Pulsar_Search/assets/folding.png?raw=true" width="250px">
 </p>
 
 
