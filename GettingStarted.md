@@ -61,6 +61,8 @@ Now would be a good time, if you haven't done so already, to read through the ba
 
 Now you've done a lot of background reading, you probably want to learn [how to find ET](https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/README.md). Please read carefully through the material in that document, which describes the BL radio search. Intern projects may involve data analysis, data visualization, RFI identification and mitigation, interacting with databases, machine learning, or other aspects of the search for ET. If you are working on a radio SETI project and are able to download and display some filterbank files using [blimpy](https://github.com/UCBerkeleySETI/blimpy) before starting your internship, you'll be off to a great head start.
 
+Some intern projects also involve analysis of optical data including from the Automated Planet Finder, TESS, and Kepler missions. If you're working directly with TESS or Kepler lightcurve data you'll probably be using the [lightkurve](https://docs.lightkurve.org/quickstart.html) package.
+
 ## Radio astronomy
 
 A good introduction to radio astronomy is at http://www.cv.nrao.edu/course/astr534/ERA_old.shtml - working through chapters 1 - 3 would be useful. There is also a free ebook at https://link.springer.com/book/10.1007%2F978-3-319-44431-4
