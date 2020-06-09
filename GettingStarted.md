@@ -59,7 +59,7 @@ If not, pick up an astronomy textbook and do some background reading, or check o
 
 Now would be a good time, if you haven't done so already, to read through the basic strategy of the Breakthrough Listen search. The material at https://seti.berkeley.edu/listen/ starts on a basic level; click through pages 1 - 4, and it gets more in-depth as you go. You don't need to read page 5, which duplicates some of the material presented here.
 
-Now you've done a lot of background reading, you probably want to learn [how to find ET](https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/README.md). Please read carefully through the material in that document, which describes the BL search. The project you will be working on is a part of this program, and may involve data analysis, data visualization, RFI identification and mitigation, interacting with databases, or other aspects of the search for ET. If you are able to download and display some filterbank files before starting your internship, you'll be off to a great head start.
+Now you've done a lot of background reading, you probably want to learn [how to find ET](https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/README.md). Please read carefully through the material in that document, which describes the BL radio search. Intern projects may involve data analysis, data visualization, RFI identification and mitigation, interacting with databases, machine learning, or other aspects of the search for ET. If you are working on a radio SETI project and are able to download and display some filterbank files using [blimpy](https://github.com/UCBerkeleySETI/blimpy) before starting your internship, you'll be off to a great head start.
 
 ## Radio astronomy
 
