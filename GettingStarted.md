@@ -55,6 +55,8 @@ Can you explain the following terms in one or two sentences? Right ascension, de
 
 If not, pick up an astronomy textbook and do some background reading, or check out an astronomy course online. For example, lectures 1, 4, 11, and 21 from http://ircamera.as.arizona.edu/astr_250/class_syl.html may be useful.
 
+To get a feel for how the positions of objects on the sky change over time and from different locations, you might want to check out the free planetarium software, [Stellarium](https://stellarium.org/).
+
 ## BL science
 
 Now would be a good time, if you haven't done so already, to read through the basic strategy of the Breakthrough Listen search. The material at https://seti.berkeley.edu/listen/ starts on a basic level; click through pages 1 - 4, and it gets more in-depth as you go. You don't need to read page 5, which duplicates some of the material presented here.
