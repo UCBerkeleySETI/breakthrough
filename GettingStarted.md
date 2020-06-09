@@ -53,9 +53,11 @@ Common tasks we find ourselves dealing with include interfacing with [SQL](https
 
 Can you explain the following terms in one or two sentences? Right ascension, declination, altitude and azimuth, B1950 and J2000 coordinates, arcseconds, parsecs, Galactic and equatorial coordinates, exoplanet, transit, resolving power, signal-to-noise ratio, luminosity, flux?
 
-If not, pick up an astronomy textbook and do some background reading, or check out an astronomy course online. For example, lectures 1, 4, 11, and 21 from http://ircamera.as.arizona.edu/astr_250/class_syl.html may be useful.
+If not, pick up an astronomy textbook and do some background reading, or check out an astronomy course online. Lectures 1, 4, 11, and 21 from http://ircamera.as.arizona.edu/astr_250/class_syl.html may be useful.
 
 To get a feel for how the positions of objects on the sky change over time and from different locations, you might want to check out the free planetarium software, [Stellarium](https://stellarium.org/). You can also plot graphs showing how objects rise and set at different observing sites, etc. using [iObserve](https://www.arcsecond.io/iobserve).
+
+Howard Isaacson's ["Intro to Astro"](https://github.com/howardisaacson/Intro-to-Astro-2020) course includes some introductory astronomy material as well as covering Unix basics, Python, LaTeX, etc.
 
 ## BL science
 
