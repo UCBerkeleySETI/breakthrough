@@ -47,7 +47,7 @@ If you are familiar with all of the above, and want to dig a little deeper into 
 
 Many of our interns are also familiar with C++, Javascript (including D3.js), PHP, R, IDL, Matlab, and other packages. If you are just starting out, we'd suggest learning Python, but if you already have extensive experience in one of the above environments, we encourage you to develop code in the environment in which you are most comfortable.
 
-Common tasks we find ourselves dealing with include interfacing with SQL databases, visualizing data for the web (D3 is nice for that but there are other good options too), manipulating and analyzing data files on the command line, and setting up tools to simplify how various machines talk to each other across the network. Often this involves writing code to glue aspects of code running on a variety of sub-systems together.
+Common tasks we find ourselves dealing with include interfacing with [SQL](https://www.kaggle.com/learn/intro-to-sql) databases, visualizing data for the web (D3 is nice for that but there are other good options too), manipulating and analyzing data files on the command line, and setting up tools to simplify how various machines talk to each other across the network. Often this involves writing code to glue aspects of code running on a variety of sub-systems together.
 
 ## Astronomy basics
 
