@@ -37,7 +37,7 @@ Once you are familiar with Python, skills that you'll find useful for our resear
 * [matplotlib](http://matplotlib.org/)
 * [Jupyter](http://jupyter.org/)
 * [Astropy](http://docs.astropy.org/en/stable/) - particularly "Core data structures and transformations", and "Connecting up: Files and I/O"
-* Pandas - for working with array-based data and other data science applications; great tutorial [here](https://www.kaggle.com/learn/pandas)
+* Pandas - for working with array-based data and other data science applications; great tutorial [here](https://www.kaggle.com/learn/pandas), which is part of a nice overall [introduction to data science and machine learning tools](https://www.kaggle.com/learn/overview)
 
 Danny Price also has a nice intro to some of the Python tools we use in our work at https://gist.github.com/telegraphic/790df2b9dc94dcb690053fe563687282
 
