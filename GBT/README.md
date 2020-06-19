@@ -204,6 +204,7 @@ Material on RFI mitigation:
 Some more machine learning papers that may be of interest, not directly related to BL or our data, but maybe relevant:
 * Outlier detection on galaxy images, based on unsupervised Random Forest: https://arxiv.org/pdf/1611.07526.pdf
 * Feature extraction in galaxy images using generative adversarial networks: https://arxiv.org/pdf/1702.00403.pdf
+* Unsupervised machine learning for anomaly detection: https://arxiv.org/pdf/1812.07156.pdf
 
 Radio astronomy tutorials (more in depth than you'll need, but good for reference):
 * Interferometry and Synthesis in Radio Astronomy (free ebook): https://link.springer.com/book/10.1007%2F978-3-319-44431-4
