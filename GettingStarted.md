@@ -59,6 +59,8 @@ To get a feel for how the positions of objects on the sky change over time and f
 
 Howard Isaacson's ["Intro to Astro"](https://github.com/howardisaacson/Intro-to-Astro-2020) course includes some introductory astronomy material as well as covering Unix basics, Python, LaTeX, etc.
 
+If you're just beginning to explore the astronomy literature, [here's a guide](https://arxiv.org/pdf/2006.12566.pdf) to finding and understanding research papers.
+
 ## BL science
 
 Now would be a good time, if you haven't done so already, to read through the basic strategy of the Breakthrough Listen search. The material at https://seti.berkeley.edu/listen/ starts on a basic level; click through pages 1 - 4, and it gets more in-depth as you go. You don't need to read page 5, which duplicates some of the material presented here.
