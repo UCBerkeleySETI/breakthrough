@@ -79,5 +79,6 @@ Both of these radio astronomy primers go into more depth than you will need to k
 
 * One-hour lecture by Steve Croft giving an overview of our search, aimed at general audiences: https://youtu.be/LJaQi8XYzRU
 * One-hour astronomy colloquium on Breakthrough Listen by Berkeley SETI Director Andrew Siemion: https://youtu.be/vQ2sKwwhRgI?t=1m48s
+* Video lectures from the 2020 Berkeley SETI summer internship intro week: https://www.youtube.com/playlist?list=PL1bxtM6SP2l2QzCPYo4L5ccvldTUPtPQE
 
 We encourage you to follow us on [Facebook](http://www.facebook.com/BerkeleySETI), [Twitter](http://twitter.com/berkeleyseti), [Instagram](http://instagram.com/berkeleyseti), and [YouTube](http://youtube.com/berkeleyseti).
