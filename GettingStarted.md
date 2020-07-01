@@ -75,6 +75,8 @@ A good introduction to radio astronomy is at http://www.cv.nrao.edu/course/astr5
 
 Both of these radio astronomy primers go into more depth than you will need to know for your summer project, but it's still good to have a handle on the basics. Terms it would be good to be familiar with include Jansky, interferometer, sidelobe, system temperature, spectrometer, correlator, and beamformer.
 
+There are PDFs and videos used for training observers on the [Green Bank Telescope](https://greenbankobservatory.org/science/gbt-observers/observer-training-videos/) that may also be of interest.
+
 ## Social media, videos, etc.
 
 * One-hour lecture by Steve Croft giving an overview of our search, aimed at general audiences: https://youtu.be/LJaQi8XYzRU
