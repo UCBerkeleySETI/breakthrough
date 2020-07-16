@@ -148,7 +148,7 @@ To access GBT data, select "Advanced Search Options", and then uncheck everythin
 
 As noted above, the file format is pretty simple, a header plus a data array. We are moving towards HDF5 for data storage, which, among other things, makes it easier to access portions of a file without reading the whole thing into memory. You can read both filterbank and HDF5 files using https://github.com/UCBerkeleySETI/blimpy
 
-There's also a fun Jupyter notebook that uses blimpy to read in and display one of our observations of the Voyager I spacecraft. Despite being 20 million kilometers from Earth and having a transmitter that only uses the same power as a refrigerator light, it's clearly detectable by our observations: https://github.com/UCBerkeleySETI/breakthrough/blob/master/GBT/voyager/voyager.ipynb
+There's also a fun Jupyter notebook that uses blimpy to read in and display one of our observations of the Voyager I spacecraft. Despite being 20 million kilometers from Earth and having a transmitter that only uses the same power as a refrigerator light, it's clearly detectable by our observations: https://github.com/UCBerkeleySETI/blimpy/blob/master/examples/voyager.ipynb
 
 This is a nice illustration of the capabilities of our instruments to detect signatures of technology even for very distant targets, and observations like the ones of Voyager, or others with artificially inserted "birdie" signals, could be used as a training set for machine learning or other approaches.
 
