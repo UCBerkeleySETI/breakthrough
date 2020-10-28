@@ -195,7 +195,6 @@ In addition to the links above, the following may be useful:
   * [Representing and converting between astronomical coordinate systems](http://docs.astropy.org/en/stable/coordinates/index.html)
   * [Manipulating times and dates](http://docs.astropy.org/en/stable/time/index.html)
 
-
 Material on RFI mitigation:
 * AOFlagger - code to flag RFI (which would likely remove most ETI signals too!) including links to a journal article: https://sourceforge.net/p/aoflagger/wiki/Home/
 * RFI mitigation using deep convolutional neural networks: https://arxiv.org/pdf/1609.09077.pdf
@@ -210,10 +209,13 @@ Radio astronomy tutorials (more in depth than you'll need, but good for referenc
 * Interferometry and Synthesis in Radio Astronomy (free ebook): https://link.springer.com/book/10.1007%2F978-3-319-44431-4
 * Lecture notes from the Essential Radio Astronomy course by Condon and Ransom (now also available as a texbook): http://www.cv.nrao.edu/course/astr534/ERA_old.shtml
 
+Background reading, curriculum links, and tutorial videos for SETI, with a focus on undergrads working with us but of more general interest:
+https://github.com/UCBerkeleySETI/breakthrough/blob/master/GettingStarted.md
+
 ## Summary
 
 The search for extraterrestrial intelligence attempts to answer one of humanity's oldest questions: Are we alone in the Universe? Breakthrough Listen's program of public code and data seeks to engage the world in this quest. The long-sought signal may in fact already be hiding in our publicly-available dataset, and you may have the skills to help us find it.
 
 We welcome those with technical skills in signal processing, machine learning, and related areas to help us in our goal of removing the haystack of RFI while not throwing away the needle, the technosignature for which we search. While we don't have the resources to provide personalized support to those who are just getting started with learning Python or data processing, if you make some progress with our data using modern analytics tools, we'd love to hear from you at bsrc@berkeley.edu.
 
-*Steve Croft, March 2019*
+*Steve Croft, October 2020*
