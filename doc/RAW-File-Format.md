@@ -79,7 +79,13 @@ a RAW file.
     This specifies the number of bits in each complex component per sample.
     Samples in RAW files are complex numbers.  `NBITS` is the number of bits
     used for the real portion and the number of bits used for the imaginary
-    portion.  Typical values for `NBITS` are 8, 4, and 2.
+    portion.  Currently, values for `NBITS` are set to 16, 8, and 4.
+
+    In rawspec, when processing a legacy raw input file that is missing the NBITS header element,
+    a value of 8 will be used.
+
+    For 16 bit samples, each complex sample consists of 4 bytes: 2 bytes for
+    real followed by 2 bytes for imaginary.
 
     For 8 bit samples, each complex sample consists of two bytes: 1 byte for
     real followed by one byte for imaginary.
@@ -88,7 +94,8 @@ a RAW file.
     component in the four most significant bits and the imaginary component in
     the four least significant bits.
 
-    For 2 bit samples, each byte contains two complex samples.  The upper four
+    Note that 2 bit samples, are **not currently supported** by rawspec.
+    Each byte contains two complex samples.  The upper four
     bits contain one sample and the lower four bits contain the other sample.
     For single polarization observations, the upper four bits represent the
     first sample and the lower four bits represent the second sample.  For dual
@@ -96,9 +103,9 @@ a RAW file.
     (typically X or LCP) and the lower four bits represent polarization 1
     (typically Y or RCP).
 
-  - `NCHAN`
+  - `OBSNCHAN`
 
-    `NCHAN` represents the number of frequency channels present in the file.
+    `OBSNCHAN` represents the number of coarse frequency channels present in the file.
 
   - `NPOL`
 
