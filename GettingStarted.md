@@ -8,25 +8,25 @@ The search for extraterrestrial intelligence is a field that bridges observation
 
 ## Computer skills
 
-The [O'Reilly](https://www.oreilly.com/) books are a good place to learn about many aspects of modern computing. Some institutions (including UC Berkeley) and public libraries have a subscription to electronic versions of the O'Reilly catalog, as well as other books of interest. Try accessing http://proquest.safaribooksonline.com/ or borrow the physical books from your local library. You'll find lots of books about Unix, Python, SQL, and many other topics.
+The [O'Reilly](https://www.oreilly.com/) books are a good place to learn about many aspects of modern computing. Some institutions (including UC Berkeley) and public libraries have a subscription to electronic versions of the O'Reilly catalog, as well as other books of interest. Try accessing [https://www.oreilly.com/library-access](https://www.oreilly.com/library-access) or borrow the physical books from your local library. You'll find lots of books about Unix, Python, SQL, and many other topics.
 
 Before starting work with us, we recommend that you update your operating system to the latest version. For Mac OS, please also install [Xcode](https://developer.apple.com/xcode/) to ensure that you have up to date compilers. You'll also need the Xcode command line tools, which you can install by typing ``xcode-select --install`` in a terminal once Xcode is installed. We also recommend that you install the [MacPorts](https://www.macports.org/install.php) package manager - note the dependencies on Xcode here. 
 
 ### Basic Unix skills
 
-Unix is the basis of the operating systems that we use on pretty much all of our computers at Berkeley SETI. If it's not Unix proper, it's a variant such as Linux or MacOS. You'll need to know how to open a terminal window, as well as basic commands like `cd`, `ls`, `mv`, etc. and how to `ssh` into a remote machine as well as how to run a VNC session (many of us use [Chicken](https://sourceforge.net/projects/chicken/) on our Macs for this). You'll also be writing shell scripts as part of your internship.
+Unix is the basis of the operating systems that we use on pretty much all of our computers at Berkeley SETI. If it's not Unix proper, it's a variant such as Linux or MacOS. You'll need to know how to open a terminal window, as well as basic commands like `cd`, `ls`, `mv`, etc. and how to `ssh` into a remote machine as well as how to run a VNC session (many of us use the Screen Sharing app on our Macs for this). You'll also be writing shell scripts as part of your internship.
 
 Here's [a good introduction to doing all this on a Mac](https://developer.apple.com/library/content/documentation/OpenSource/Conceptual/ShellScripting/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004268-TP40003516-SW1).
 
-If you only have a PC running Windows, try installing Ubuntu Linux as a dual-boot system, following the instructions at https://www.ubuntu.com/download/desktop/install-ubuntu-desktop, or install the Windows Subsystem for Linux, https://docs.microsoft.com/en-us/windows/wsl/install-win10. Then follow the Unix tutorial above, or a similar tutorial specifically for Ubuntu (e.g. Chapter 7 of [Ubuntu: Up and Running](http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9781449382827)).
+If you only have a PC running Windows, try installing Ubuntu Linux as a dual-boot system, following the instructions at https://www.ubuntu.com/download/desktop/install-ubuntu-desktop, or install the Windows Subsystem for Linux, https://docs.microsoft.com/en-us/windows/wsl/install-win10. Then follow the Unix tutorial above, or a similar tutorial specifically for Ubuntu (e.g. Chapter 7 of [Ubuntu: Up and Running]([https://learning.oreilly.com/library/view/ubuntu-up-and/9781449382827/](https://learning.oreilly.com/library/view/ubuntu-up-and/9781449382827/)).
 
 You'll also need to learn how to use the `git` version control system, so take a look at https://backlogtool.com/git-guide/en/intro/intro1_1.html
 
-Many folks here edit code in `vi` or `emacs` but another great visual editor to try is [Atom](https://atom.io/).
+Many folks here edit code in `vi` or `emacs` but another great visual editor to try is [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Python
 
-There are several O'Reilly books focused on learning Python (e.g. http://proquest.safaribooksonline.com/book/programming/python/9781449355722), or you can learn online at https://www.learnpython.org/, https://www.python.org/about/gettingstarted/, https://www.codecademy.com/tracks/python, or a variety of other sites. Here's a tutorial focused on Python for astronomers: http://python4astronomers.github.io/index.html
+There are several O'Reilly books focused on learning Python (e.g. https://learning.oreilly.com/library/view/learning-python-5th/9781449355722/), or you can learn online at https://www.learnpython.org/, https://www.python.org/about/gettingstarted/, https://www.codecademy.com/tracks/python, or a variety of other sites. Here's a tutorial focused on Python for astronomers: http://python4astronomers.github.io/index.html
 
 If you already have some programming experience, there's a great intro to Python as part of Kaggle's data science curriculum at https://www.kaggle.com/learn/overview - this also covers machine learning, data visualization, SQL, and a bunch of other really useful stuff.
 
