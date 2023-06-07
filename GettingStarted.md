@@ -71,7 +71,7 @@ Some intern projects also involve analysis of optical data including from the Au
 
 ## Radio astronomy
 
-A good introduction to radio astronomy is at http://www.cv.nrao.edu/course/astr534/ERA_old.shtml - working through chapters 1 - 3 would be useful. There is also a free ebook at https://link.springer.com/book/10.1007%2F978-3-319-44431-4
+A good introduction to radio astronomy is at https://www.cv.nrao.edu/~sransom/web/xxx.html - working through chapters 1 - 3 would be useful. There is also a free ebook at https://link.springer.com/book/10.1007%2F978-3-319-44431-4
 
 Both of these radio astronomy primers go into more depth than you will need to know for your summer project, but it's still good to have a handle on the basics. Terms it would be good to be familiar with include Jansky, interferometer, sidelobe, system temperature, spectrometer, correlator, and beamformer.
 
