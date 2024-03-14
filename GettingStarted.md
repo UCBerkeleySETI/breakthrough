@@ -79,8 +79,8 @@ There are PDFs and videos used for training observers on the [Green Bank Telesco
 
 ## Social media, videos, etc.
 
-* One-hour lecture by Steve Croft giving an overview of our search, aimed at general audiences: https://youtu.be/LJaQi8XYzRU
-* One-hour astronomy colloquium on Breakthrough Listen by Berkeley SETI Director Andrew Siemion: https://youtu.be/vQ2sKwwhRgI?t=1m48s
-* Video lectures from the 2020 Berkeley SETI summer internship intro week: https://www.youtube.com/playlist?list=PL1bxtM6SP2l2QzCPYo4L5ccvldTUPtPQE
+* One-hour lecture by Steve Croft giving an overview of our search, aimed at general audiences: [[https://youtu.be/LJaQi8XYzRU](https://youtu.be/LJaQi8XYzRU)](https://www.youtube.com/watch?v=7ESvXxr4e0c&t=300s)
+* One-hour astronomy colloquium on Breakthrough Listen by Berkeley SETI Director Andrew Siemion: [https://youtu.be/vQ2sKwwhRgI?t=1m48s](https://youtu.be/vQ2sKwwhRgI?t=1m48s)
+* Video lectures from the 2023 Berkeley SETI summer internship intro week: [https://www.youtube.com/playlist?list=PL1bxtM6SP2l2QzCPYo4L5ccvldTUPtPQE](https://www.youtube.com/playlist?list=PL1bxtM6SP2l1JGPeKYowfsPVNGKixBgUl)
 
 We encourage you to follow us on [Facebook](http://www.facebook.com/BerkeleySETI), [Twitter](http://twitter.com/berkeleyseti), [Instagram](http://instagram.com/berkeleyseti), and [YouTube](http://youtube.com/berkeleyseti).
