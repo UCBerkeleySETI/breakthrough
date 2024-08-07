@@ -208,6 +208,8 @@ Some more machine learning papers that may be of interest, not directly related 
 Radio astronomy tutorials (more in depth than you'll need, but good for reference):
 * Interferometry and Synthesis in Radio Astronomy (free ebook): https://link.springer.com/book/10.1007%2F978-3-319-44431-4
 * Essential Radio Astronomy course by Condon and Ransom (now also available as a texbook): https://www.cv.nrao.edu/~sransom/web/xxx.html
+* Videos from the GBT single dish training: https://www.youtube.com/playlist?list=PL7Rw2RzSVNdFGPuCk7CXbq1fWcfUPcgHB
+* More GBT observer training videos: https://greenbankobservatory.org/portal/gbt/training/
 
 Background reading, curriculum links, and tutorial videos for SETI, with a focus on undergrads working with us but of more general interest:
 https://github.com/UCBerkeleySETI/breakthrough/blob/master/GettingStarted.md
